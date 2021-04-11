@@ -1,0 +1,32 @@
+
+/* Hero image and Motto (Jana)*/
+.image {
+    position:relative; /*with respect to the viewport*/
+    width: 320px;
+    height: 421px;
+    display: block;
+    margin: auto;
+    }
+.hero {
+    position:absolute; /*with respect to image*/
+    width: 320px;
+    height: 421px;
+    }
+.rectangle {
+    background-color: #ffffff;
+    position: absolute; /*with respect to hero*/
+    width: 290px;
+    height: 80px;
+    display: block;
+    left: 15px;
+    top: 387px;
+}
+.motto {
+    font-family: OpenSans;
+    font-size: 18px;
+    font-style: normal; /*opcional*/
+    font-weight: 600; /*Semi-bold text*/
+    letter-spacing: normal;
+    color: black;
+    text-align: center;
+}
