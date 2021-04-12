@@ -86,6 +86,7 @@ a:active {
   color: black;
   text-align: center;
 }
+<<<<<<< HEAD
 .header_base {
   width: 320px;
   height: 60px;
@@ -100,11 +101,28 @@ a:active {
   height: 30px;
   text-align: center;
   font-size: 16px;
+=======
+/*seccion equipo, fortalezas y debilidades*/
+
+.Rectangle-3-Copy {
+  width: 320px;
+  height: 504px;
+  padding: 30px 15px;
+  background-color: #ffffff;
+}
+.EQUIPO {
+  width: 89px;
+  height: 45px;
+  margin: 0 99.5px 15px 101.5px;
+  font-family: Rubik;
+  font-size: 24px;
+>>>>>>> 25f5e3b715df2460f2e3e13cb9466f89d03ef244
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
+<<<<<<< HEAD
   color: #ffffff;
 }
 .menu {
@@ -163,3 +181,86 @@ a:active {
   letter-spacing: normal;
   color: #ffffff;
 }
+=======
+  text-align: center;
+  color: var(--aqua);
+}
+.Lorem-ipsum-dolor-si {
+  width: 290px;
+  height: 384px;
+  margin: 15px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+Rectangle-3 {
+  width: 320px;
+  height: 579px;
+  margin: 504px 0 0;
+  padding: 30px 15px 45px;
+  opacity: 0.2;
+  background-color: var(--cool-grey);
+}
+.Fortalezas {
+  width: 290px;
+  height: 45px;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+.Lorem-ipsum-dolor-si {
+  width: 290px;
+  height: 192px;
+  margin: 45px 0 30px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+.Debilidades {
+  width: 290px;
+  height: 45px;
+  margin: 30px 0 0;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+.Lorem-ipsum-dolor-si-Copy {
+  width: 290px;
+  height: 192px;
+  margin: 75px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+/*hasta aqui la seccion de lorena*/
+>>>>>>> 25f5e3b715df2460f2e3e13cb9466f89d03ef244
