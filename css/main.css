@@ -1,8 +1,9 @@
 :root {
   --FontRubik: Rubik;
-  --FontOpenSans: OpenSans;
+  --FontOpenSans: "Roboto", sans-serif;
   --FontSize: 16px;
   --Gris: #54585a;
+  --Grisclaro: #b8b8b9;
   --Verdeclaro: #14d9c4;
   --Verdeoscuro: #099d8d;
   --WhiteBackground: white;
@@ -87,7 +88,7 @@
   top: 387px;
 }
 .motto {
-  font-family: OpenSans;
+  font-family: var(--FontOpenSans);
   font-size: 18px;
   font-style: normal; /*opcional*/
   font-weight: 600; /*Semi-bold text*/
@@ -104,8 +105,15 @@
 
 /*HEADER */
 .header_all {
-  box-sizing: border-box;
+  display: block;
+  margin: auto;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 1;
+  z-index: 999;
 }
 
 .header_base {
@@ -119,7 +127,6 @@
   text-align: center;
   /* width: 160px;
   height: 30px;
-  text-align: center;
   font-size: 16px; */
 }
 
@@ -149,6 +156,8 @@
   width: 320px;
   display: flex;
   margin: 0px 20px 0px 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .equipo {
@@ -161,7 +170,6 @@
   font-style: normal;
   line-height: 2;
   color: #ffffff;
-  flex-grow: 1;
 }
 .quienes_somos {
   text-transform: uppercase;
@@ -174,7 +182,8 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
-  flex-grow: 1;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .contactos {
   text-transform: uppercase;
@@ -187,76 +196,91 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
-  flex-grow: 1;
 }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 
+.section2 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 579px;
+}
+
 .team-container {
+  font-family: var(--FontOpenSans);
   width: 320px;
   height: 425px;
-  padding: 30px 15px;
+  padding: 35px 15px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 30px;
+  line-height: 1.2;
 }
 .team-title {
-  width: 290px;
+  font-family: var(--FontOpenSans);
   height: 45px;
   text-align: center;
-  font-weight: 500;
-  font-family: Rubik;
   font-size: 22px;
+  color: var(--Verdeclaro);
 }
 .team-description {
-  width: 290px;
+  font-family: var(--FontOpenSans);
   height: 384px;
   font-size: 16px;
   text-align: center;
+  color: var(--Gris);
 }
 
 .strengths-container {
-  width: 290px;
-  height: 192px;
-  padding: 30px 15px 45px;
+  font-family: var(--FontOpenSans);
+  padding: 30px 15px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 1;
 }
 .strengths {
-  width: 290px;
-  height: 45px;
+  font-family: var(--FontOpenSans);
   text-align: center;
-  font-weight: 500;
-  font-family: Rubik;
   font-size: 22px;
+  color: var(--Verdeoscuro);
 }
 .weaknesses-container {
-  width: 290px;
-  height: 192px;
-  padding: 30px 15px 45px;
+  font-family: var(--FontOpenSans);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--Gris);
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 4;
+  padding: 0px 15px 0px;
 }
 .weaknesses {
-  width: 290px;
-  height: 45px;
+  font-family: var(--FontOpenSans);
   text-align: center;
   font-weight: 500;
-  font-family: Rubik;
   font-size: 22px;
+  color: var(--Verdeoscuro);
 }
 .weaknesses-description {
-  width: 290px;
-  height: 192px;
-  font-family: OpenSans;
+  font-family: var(--FontOpenSans);
   font-size: 16px;
   text-align: center;
+  color: var(--Gris);
+}
+
+.section1 .section2 {
+  max-width: 320px;
 }
 
 /* text-align: center;
