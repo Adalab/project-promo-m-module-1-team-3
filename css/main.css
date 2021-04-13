@@ -1,13 +1,9 @@
 :root {
-  --fontTipe: ;
-  --FontSize: ;
-  --FontColor: ;
-  --Background: ;
+  --FontTipe: "";
+  --FontSize: "";
+  --FontColor: "";
+  --Background: "";
 }
-* {
-  box-sizing: border-box;
-}
-
 /* css Footer */
 
 .footer {
@@ -73,7 +69,6 @@ a:active {
   position: absolute; /*with respect to image*/
   width: 320px;
   height: 421px;
-  margin-bottom: 15px;
 }
 .rectangle {
   background-color: #ffffff;
