@@ -33,19 +33,19 @@
   opacity: 0.75;
   text-transform: uppercase;
 }
-a:link {
+.link-color:link {
   color: #54585a;
   text-decoration: none;
 }
-a:visited {
+.link-color:visited {
   color: #54585a;
   text-decoration: none;
 }
-a:hover {
+.link-color:hover {
   color: #099d8d;
   text-decoration: none;
 }
-a:active {
+.link-color:active {
   color: #099d8d;
   text-decoration: none;
 }
@@ -304,4 +304,20 @@ a:active {
   float: left;
   margin: 10px;
   font-size: 16px; /*REVISAR*/
+}
+.link:link {
+  color: var(--Verdeoscuro);
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--Verdeoscuro);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.link:active {
+  color: var(--Verdeclaro);
+  text-decoration: none;
 }
