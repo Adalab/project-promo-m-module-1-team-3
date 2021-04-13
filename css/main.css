@@ -105,6 +105,7 @@
 /*HEADER */
 .header_all {
   box-sizing: border-box;
+  max-width: 320px;
 }
 
 .header_base {
@@ -122,21 +123,17 @@
   font-size: 16px; */
 }
 
-.team_name {
-  /* font-family: Rubik;
+/*.team_name {
+   font-family: Rubik;
   text-transform: uppercase;
   width: 160px;
   height: 30px;
   text-align: center;
-  font-size: 16px; */
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-}
+  font-size: 16px; 
+}*/
 
 .menu_bar {
+  height: 45px;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -149,14 +146,14 @@
   background-color: #14d9c4;
 }
 .menu_list {
-  width: 408px;
+  width: 320px;
   display: flex;
-  flex-direction: row;
+  margin: 0px 20px 0px 20px;
 }
 
 .equipo {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -164,10 +161,11 @@
   font-style: normal;
   line-height: 2;
   color: #ffffff;
+  flex-grow: 1;
 }
 .quienes_somos {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -176,10 +174,11 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+  flex-grow: 1;
 }
 .contactos {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -188,6 +187,7 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+  flex-grow: 1;
 }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
@@ -195,35 +195,43 @@
 .team-container {
   width: 320px;
   height: 425px;
+  position: relative;
   padding: 30px 15px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: auto;
   justify-content: center;
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #54585a;
 }
 .team-title {
-  width: 290px;
-  height: 45px;
   text-align: center;
   font-weight: 500;
   font-family: Rubik;
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 1.88;
+  color: var(--Verdeclaro);
 }
 .team-description {
-  width: 290px;
-  height: 384px;
+  line-height: 24px;
   font-size: 16px;
   text-align: center;
+  padding: 30px 15px;
+  background-color: #ffffff;
 }
 
 .strengths-container {
-  width: 290px;
-  height: 192px;
-  padding: 30px 15px 45px;
-  display: flex;
+  width: 320px;
+  padding: 130px 15px 45px;
+  display: block;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
+  /* background-color: ; */
   position: relative;
+  box-sizing: content-box;
 }
 .strengths {
   width: 290px;
@@ -241,7 +249,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--Gris);
+  /*background-color: ;falta el color*/
 }
 .weaknesses {
   width: 290px;
