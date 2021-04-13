@@ -1,10 +1,11 @@
 :root {
   --FontRubik: Rubik;
+  --FontOpenSans: OpenSans;
   --FontSize: 16px;
   --Gris: #54585a;
   --Verdeclaro: #14d9c4;
   --Verdeoscuro: #099d8d;
-  --WhiteBackground: white;					   
+  --WhiteBackground: white;
 }
 /* css Footer */
 
@@ -94,7 +95,7 @@ a:active {
   height: 50px;
   display: block;
   left: 15px;
-  top: 14px;		   
+  top: 14px;
 }
 
 /*HEADER */
@@ -147,7 +148,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--cool-grey);
+  background-color: ;
   position: relative;
 }
 .strengths {
@@ -166,7 +167,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--cool-grey);
+  background-color: var(--Gris);
 }
 .weaknesses {
   width: 290px;
@@ -248,12 +249,11 @@ a:active {
 }
 
 .container-description {
-  background-color: red; 
+  background-color: red;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-
 }
