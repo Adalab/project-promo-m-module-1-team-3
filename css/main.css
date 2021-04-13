@@ -1,8 +1,8 @@
 :root {
-  --FontTipe: "";
-  --FontSize: "";
-  --FontColor: "";
-  --Background: "";
+  --fontTipe: ;
+  --FontSize: ;
+  --FontColor: ;
+  --Background: ;
 }
 * {
   box-sizing: border-box;
