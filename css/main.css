@@ -138,6 +138,20 @@ a:active {
   background-color: #14d9c4;
 }
 
+.equipo {
+  text-transform: uppercase;
+  width: 56px;
+  height: 30px;
+  margin: 0 15px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+
 .quienes_somos {
   text-transform: uppercase;
   width: 121px;
