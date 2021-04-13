@@ -148,7 +148,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ;
+  /* background-color: ; */
   position: relative;
 }
 .strengths {
@@ -167,7 +167,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--Gris);
+  /*background-color: ;falta el color*/
 }
 .weaknesses {
   width: 290px;
