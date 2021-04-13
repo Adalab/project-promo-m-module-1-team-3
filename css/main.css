@@ -109,83 +109,19 @@ a:active {
 }
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 
-.Rectangle-3-Copy {
+.team-container {
   width: 320px;
   height: 504px;
   padding: 30px 15px;
   background-color: #ffffff;
-}
-.equipo {
-  width: 89px;
-  height: 45px;
-  margin: 0 99.5px 15px 101.5px;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.equipo {
-  text-transform: uppercase;
-  width: 56px;
-  height: 30px;
-  margin: 0 15px 0 0;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #ffffff;
+  margin: 15px 0 0;
+  text-align: center;
 }
 
 /* text-align: center;
   color: var(--aqua);
 } */
-.descripcion {
-  width: 290px;
-  height: 384px;
-  margin: 15px 0 0;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-}
-Rectangle-3 {
-  width: 320px;
-  height: 579px;
-  margin: 504px 0 0;
-  padding: 30px 15px 45px;
-  opacity: 0.2;
-  background-color: var(--cool-grey);
-}
-.fortalezas {
-  width: 290px;
-  height: 45px;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-green);
-}
-.descripcion {
-  width: 290px;
-  height: 192px;
-  margin: 45px 0 30px;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-}
-.debilidades {
-  width: 290px;
-  height: 45px;
-  margin: 30px 0 0;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-green);
-}
-.descripcion2 {
-  width: 290px;
-  height: 192px;
-  margin: 75px 0 0;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-}
+
 /*hasta aqui la seccion de lorena*/
 
 .menu {
