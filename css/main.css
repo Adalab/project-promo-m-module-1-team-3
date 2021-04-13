@@ -1,8 +1,9 @@
 :root {
-  --FontTipe: ;
-  --FontSize: ;
-  --FontColor: ;
-  --Background: ;
+  --FontTipe: Rubik;
+  --FontSize: 16px;
+  --Gris: #54585a;
+  --Verdeclaro: #14d9c4;
+  --Verdeoscuro: #099d8d;
 }
 /* css Footer */
 
