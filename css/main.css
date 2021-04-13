@@ -108,10 +108,69 @@ a:active {
 
 .team-container {
   width: 320px;
-  height: 504px;
+  height: 425px;
   padding: 30px 15px;
   background-color: #ffffff;
-  margin: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-title {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.team-description {
+  width: 290px;
+  height: 384px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.strengths-container {
+  width: 290px;
+  height: 192px;
+  padding: 30px 15px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cool-grey);
+  position: relative;
+}
+.strengths {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.weaknesses-container {
+  width: 290px;
+  height: 192px;
+  padding: 30px 15px 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cool-grey);
+}
+.weaknesses {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.weaknesses-description {
+  width: 290px;
+  height: 192px;
+  font-family: OpenSans;
+  font-size: 16px;
   text-align: center;
 }
 
