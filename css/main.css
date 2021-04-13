@@ -1,32 +1,88 @@
+* {
+  box-sizing: border-box;
+}
 
+/* css Footer */
+
+.footer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid #b8b8b9 1px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  font-family: OpenSans;
+}
+.footer-menu {
+  width: 114px;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 1.43em;
+  color: #54585a;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+a:link {
+  color: #54585a;
+  text-decoration: none;
+}
+a:visited {
+  color: #54585a;
+  text-decoration: none;
+}
+a:hover {
+  color: #099d8d;
+  text-decoration: none;
+}
+a:active {
+  color: #099d8d;
+  text-decoration: none;
+}
+.image-logo {
+  padding-top: 30px;
+}
+.logo-size {
+  height: 45px;
+  width: 115.9px;
+}
+.name-footer {
+  width: 172px;
+  height: 20px;
+  color: #b8b8b9;
+}
 /* Hero image and Motto (Jana)*/
 .image {
-    position:relative; /*with respect to the viewport*/
-    width: 320px;
-    height: 421px;
-    display: block;
-    margin: auto;
-    }
+  position: relative; /*with respect to the viewport*/
+  width: 320px;
+  height: 421px;
+  display: block;
+  margin: auto;
+}
 .hero {
-    position:absolute; /*with respect to image*/
-    width: 320px;
-    height: 421px;
-    }
+  position: absolute; /*with respect to image*/
+  width: 320px;
+  height: 421px;
+}
 .rectangle {
-    background-color: #ffffff;
-    position: absolute; /*with respect to hero*/
-    width: 290px;
-    height: 80px;
-    display: block;
-    left: 15px;
-    top: 387px;
+  background-color: #ffffff;
+  position: absolute; /*with respect to hero*/
+  width: 290px;
+  height: 80px;
+  display: block;
+  left: 15px;
+  top: 387px;
 }
 .motto {
-    font-family: OpenSans;
-    font-size: 18px;
-    font-style: normal; /*opcional*/
-    font-weight: 600; /*Semi-bold text*/
-    letter-spacing: normal;
-    color: black;
-    text-align: center;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-style: normal; /*opcional*/
+  font-weight: 600; /*Semi-bold text*/
+  letter-spacing: normal;
+  color: black;
+  text-align: center;
 }
