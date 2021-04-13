@@ -287,6 +287,7 @@ a:active {
   font-family: var(--FontTipe); /*REVISAR*/
   font-size: 24px;
   color: var(--Verdeoscuro);
+  margin-bottom: 30px;
 }
 
 .name {
