@@ -4,7 +4,7 @@
   --Gris: #54585a;
   --Verdeclaro: #14d9c4;
   --Verdeoscuro: #099d8d;
-  
+}
 /* css Footer */
 
 .footer {
@@ -89,6 +89,9 @@ a:active {
   color: black;
   text-align: center;
 }
+
+/*HEADER */
+
 .header_base {
   width: 320px;
   height: 60px;
