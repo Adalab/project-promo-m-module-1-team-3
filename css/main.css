@@ -102,6 +102,7 @@
 /*HEADER */
 .header_all {
   box-sizing: border-box;
+  max-width: 320px;
 }
 
 .header_base {
@@ -128,12 +129,8 @@
   font-size: 16px; */
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-}
-
 .menu_bar {
+  height: 45px;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -146,14 +143,14 @@
   background-color: #14d9c4;
 }
 .menu_list {
-  width: 408px;
+  width: 320px;
   display: flex;
-  flex-direction: row;
+  margin: 0px 20px 0px 20px;
 }
 
 .equipo {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -161,10 +158,11 @@
   font-style: normal;
   line-height: 2;
   color: #ffffff;
+  flex-grow: 1;
 }
 .quienes_somos {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -173,10 +171,11 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+  flex-grow: 1;
 }
 .contactos {
   text-transform: uppercase;
-  height: 30px;
+  /* height: 30px; */
   font-family: Rubik;
   font-size: 15px;
   font-weight: 500;
@@ -185,6 +184,7 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+  flex-grow: 1;
 }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
