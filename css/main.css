@@ -180,3 +180,14 @@ a:active {
   letter-spacing: normal;
   color: #ffffff;
 }
+
+.container-description {
+  background-color: red; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+}
