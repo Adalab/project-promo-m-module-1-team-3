@@ -89,6 +89,9 @@ a:active {
   color: black;
   text-align: center;
 }
+
+/*HEADER */
+
 .header_base {
   width: 320px;
   height: 60px;
