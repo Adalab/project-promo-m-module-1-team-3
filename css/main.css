@@ -1,9 +1,11 @@
 :root {
-  --FontTipe: Rubik;
+  --FontRubik: Rubik;
+  --FontOpenSans: OpenSans;
   --FontSize: 16px;
   --Gris: #54585a;
   --Verdeclaro: #14d9c4;
   --Verdeoscuro: #099d8d;
+  --WhiteBackground: white;
 }
 /* css Footer */
 
@@ -19,6 +21,7 @@
   padding-bottom: 45px;
   font-size: 14px;
   font-family: OpenSans;
+  margin-top: 45px;
 }
 .footer-menu {
   width: 114px;
@@ -71,7 +74,7 @@ a:active {
   width: 320px;
   height: 421px;
 }
-.rectangle {
+.motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
   width: 290px;
@@ -88,6 +91,12 @@ a:active {
   letter-spacing: normal;
   color: black;
   text-align: center;
+  position: absolute; /*with respect to motto-rectangle*/
+  width: 260px;
+  height: 50px;
+  display: block;
+  left: 15px;
+  top: 14px;
 }
 
 /*HEADER */
@@ -111,10 +120,68 @@ a:active {
 
 .team-container {
   width: 320px;
-  height: 504px;
+  height: 425px;
   padding: 30px 15px;
   background-color: #ffffff;
-  margin: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-title {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.team-description {
+  width: 290px;
+  height: 384px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.strengths-container {
+  width: 290px;
+  height: 192px;
+  padding: 30px 15px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.strengths {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.weaknesses-container {
+  width: 290px;
+  height: 192px;
+  padding: 30px 15px 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--Gris);
+}
+.weaknesses {
+  width: 290px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 22px;
+}
+.weaknesses-description {
+  width: 290px;
+  height: 192px;
+  font-family: OpenSans;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -138,6 +205,20 @@ a:active {
   background-color: #14d9c4;
 }
 
+.equipo {
+  text-transform: uppercase;
+  width: 56px;
+  height: 30px;
+  margin: 0 15px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 .quienes_somos {
   text-transform: uppercase;
   width: 121px;
@@ -165,4 +246,62 @@ a:active {
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+}
+
+.container-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 15px 0px 15px;
+  text-align: center;
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 16px; /*REVISAR*/
+  line-height: 1.5;
+}
+
+.title-description {
+  text-transform: uppercase;
+  font-family: var(--FontTipe); /*REVISAR*/
+  font-size: 24px;
+  color: var(--Verdeoscuro);
+  margin-bottom: 30px;
+}
+
+.name {
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 20px;
+  color: black;
+  height: 45px;
+  margin-top: 15px;
+}
+
+.text-description {
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 16px; /*REVISAR*/
+  color: var(--Gris);
+}
+
+.social-media {
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.item-social {
+  color: var(--Verdeoscuro);
+  float: left;
+  margin: 10px;
+  font-size: 16px; /*REVISAR*/
 }
