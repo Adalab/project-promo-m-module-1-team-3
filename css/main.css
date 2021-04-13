@@ -10,7 +10,7 @@
 /* css Footer */
 
 .footer {
-  width: 100%;
+  max-width: 320px;
   height: 250px;
   display: flex;
   flex-direction: column;
