@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
+:root {
+  --FontTipe: "";
+  --FontSize: "";
+  --FontColor: "";
+  --Background: "";
 }
-
 /* css Footer */
 
 .footer {
@@ -44,7 +46,7 @@ a:active {
   text-decoration: none;
 }
 .image-logo {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .logo-size {
   height: 45px;
@@ -86,3 +88,183 @@ a:active {
   color: black;
   text-align: center;
 }
+.header_base {
+  width: 320px;
+  height: 60px;
+  padding: 15px 80px;
+  opacity: 0.95;
+  background-color: #099d8d;
+}
+.team {
+  font-family: Rubik;
+  text-transform: uppercase;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+/*seccion equipo, fortalezas y debilidades*/
+
+.Rectangle-3-Copy {
+  width: 320px;
+  height: 504px;
+  padding: 30px 15px;
+  background-color: #ffffff;
+}
+.EQUIPO {
+  width: 89px;
+  height: 45px;
+  margin: 0 99.5px 15px 101.5px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  font-family: Rubik;
+}
+.menu_bar {
+  width: 320px;
+  height: 45px;
+  /*margin: 60px 0 0;*/
+  padding: 8px 17px 7px 16px;
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.equipo {
+  text-transform: uppercase;
+  width: 56px;
+  height: 30px;
+  margin: 0 15px 0 0;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.quienes_somos {
+  text-transform: uppercase;
+  width: 121px;
+  height: 30px;
+  margin: 0 15px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.contactos {
+  text-transform: uppercase;
+  width: 80px;
+  height: 30px;
+  margin: 0 0 0 15px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+/* text-align: center;
+  color: var(--aqua);
+} */
+.Lorem-ipsum-dolor-si {
+  width: 290px;
+  height: 384px;
+  margin: 15px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+Rectangle-3 {
+  width: 320px;
+  height: 579px;
+  margin: 504px 0 0;
+  padding: 30px 15px 45px;
+  opacity: 0.2;
+  background-color: var(--cool-grey);
+}
+.Fortalezas {
+  width: 290px;
+  height: 45px;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+.Lorem-ipsum-dolor-si {
+  width: 290px;
+  height: 192px;
+  margin: 45px 0 30px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+.Debilidades {
+  width: 290px;
+  height: 45px;
+  margin: 30px 0 0;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-green);
+}
+.Lorem-ipsum-dolor-si-Copy {
+  width: 290px;
+  height: 192px;
+  margin: 75px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+/*hasta aqui la seccion de lorena*/
+
+/*Empieza seccion de Almudena*/
+/* main {
+  margin: 50px;
+  font-family: OpenSans;
+} */
+/*Termina seccion de Almudena*/
