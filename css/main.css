@@ -11,7 +11,7 @@
 /* css Footer */
 
 .footer {
-  width: 100%;
+  max-width: 320px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -130,14 +130,14 @@
   font-size: 16px; */
 }
 
-.team_name {
-  /* font-family: Rubik;
+/*.team_name {
+   font-family: Rubik;
   text-transform: uppercase;
   width: 160px;
   height: 30px;
   text-align: center;
-  font-size: 16px; */
-}
+  font-size: 16px; 
+}*/
 
 .menu_bar {
   height: 45px;
@@ -214,11 +214,17 @@
   font-family: var(--FontOpenSans);
   width: 320px;
   height: 425px;
+<<<<<<< HEAD
   padding: 35px 15px;
+=======
+  position: relative;
+  padding: 30px 15px;
+>>>>>>> aeaef412b63c15677162acc38f77c7d45ce0e9f6
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: auto;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: 30px;
   line-height: 1.2;
 }
@@ -247,6 +253,39 @@
   line-height: 1.5;
   color: var(--Gris);
   flex-grow: 1;
+=======
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #54585a;
+}
+.team-title {
+  text-align: center;
+  font-weight: 500;
+  font-family: Rubik;
+  font-size: 24px;
+  line-height: 1.88;
+  color: var(--Verdeclaro);
+}
+.team-description {
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #ffffff;
+}
+
+.strengths-container {
+  width: 320px;
+  padding: 130px 15px 45px;
+  display: block;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: ; */
+  position: relative;
+  box-sizing: content-box;
+>>>>>>> aeaef412b63c15677162acc38f77c7d45ce0e9f6
 }
 .strengths {
   font-family: var(--FontOpenSans);
@@ -260,10 +299,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   line-height: 1.5;
   color: var(--Gris);
   flex-grow: 4;
   padding: 0px 15px 0px;
+=======
+  /*background-color: ;falta el color*/
+>>>>>>> aeaef412b63c15677162acc38f77c7d45ce0e9f6
 }
 .weaknesses {
   font-family: var(--FontOpenSans);
