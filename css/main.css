@@ -122,37 +122,14 @@
   font-size: 16px; */
 }
 
-.quienes_somos {
-  text-transform: uppercase;
-  height: 30px;
-  font-family: Rubik;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-.contactos {
-  text-transform: uppercase;
-  height: 30px;
-  font-family: Rubik;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-/* .team_name {
-  font-family: Rubik;
+.team_name {
+  /* font-family: Rubik;
   text-transform: uppercase;
   width: 160px;
   height: 30px;
   text-align: center;
   font-size: 16px; */
+}
 
 .menu {
   list-style: none;
@@ -186,6 +163,30 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
+  color: #ffffff;
+}
+.quienes_somos {
+  text-transform: uppercase;
+  height: 30px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.contactos {
+  text-transform: uppercase;
+  height: 30px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
   color: #ffffff;
 }
 
