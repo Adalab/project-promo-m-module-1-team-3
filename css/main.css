@@ -203,7 +203,9 @@
 }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
-
+.section1 {
+  position: relative;
+}
 .section2 {
   background-color: #efefef;
   display: flex;
@@ -223,7 +225,6 @@
   align-content: space-between;
   margin-top: 30px;
   line-height: 1.2;
-  padding-top: 105px;
 }
 .team-title {
   font-family: var(--FontOpenSans);
@@ -313,15 +314,18 @@
   font-family: sans-serif; /*REVISAR*/
   font-size: 16px; /*REVISAR*/
   line-height: 1.5;
+  position: relative;
 }
-
+.anchor {
+  position: absolute;
+  top: -150px;
+}
 .title-description {
   text-transform: uppercase;
   font-family: var(--FontTipe); /*REVISAR*/
   font-size: 24px;
   color: var(--Verdeoscuro);
   margin-bottom: 30px;
-  padding-top: 105px;
   font-weight: 500;
 }
 
