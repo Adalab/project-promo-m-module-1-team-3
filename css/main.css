@@ -111,7 +111,9 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  top: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
 }
 
@@ -170,8 +172,8 @@
   line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .contactos {
   text-transform: uppercase;
@@ -217,11 +219,11 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: space-between;
+  align-content: space-between;
   margin-top: 30px;
   line-height: 1.2;
+  padding-top: 105px;
 }
 .team-title {
   font-family: var(--FontOpenSans);
@@ -319,6 +321,8 @@
   font-size: 24px;
   color: var(--Verdeoscuro);
   margin-bottom: 30px;
+  padding-top: 105px;
+  font-weight: 500;
 }
 
 .name {
