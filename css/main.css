@@ -9,32 +9,29 @@
   --WhiteBackground: white;
 }
 /* css Footer */
-
+@media (min-width: 768px) {
+  .footer {
+  }
+}
 .footer {
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   border-top: solid #b8b8b9 1px;
   padding-top: 30px;
   padding-bottom: 45px;
   font-size: 14px;
   font-family: var(--FontOpenSans);
   margin-top: 45px;
-  text-align: center;
 }
 .footer-menu {
-  width: 114px;
-  height: 60px;
-  padding-top: 20px;
+  grid-column: span 1;
+  justify-self: center;
   text-align: center;
   line-height: 1.43em;
   color: var(--Gris);
   opacity: 0.75;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 20px;
 }
 .link-color:link {
   color: var(--Gris);
@@ -53,16 +50,19 @@
   text-decoration: none;
 }
 .image-logo {
-  margin-top: 30px;
+  grid-column: span 1;
+  justify-self: center;
+  padding-top: 30px;
 }
 .logo-size {
   height: 45px;
   width: 115.9px;
 }
 .name-footer {
-  width: 172px;
-  height: 20px;
+  grid-column: span 1;
+  justify-self: center;
   color: #b8b8b9;
+  padding-bottom: 20px;
 }
 /* Hero image and Motto (Jana)*/
 .image {
