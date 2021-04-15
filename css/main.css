@@ -82,17 +82,19 @@
 }
 /* Hero image and Motto (Jana)*/
 .image {
+  background-image: url("../images/imagen-cabecera-movil.png");
+  background-size: contain;
   position: relative; /*with respect to the viewport*/
-  width: 320px;
-  height: 421px;
   display: block;
-  margin: auto;
-}
-.hero {
-  position: absolute; /*with respect to image*/
   width: 320px;
   height: 421px;
+  margin: auto; /*changed for 2nd sprint from auto*/
 }
+/* .hero {
+  position: absolute; /*with respect to image
+  width: 320px;
+  height: 421px;
+} */
 .motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
@@ -101,6 +103,7 @@
   display: block;
   left: 15px;
   top: 387px;
+  margin: 0;
 }
 .motto {
   font-family: var(--FontOpenSans);
@@ -116,6 +119,28 @@
   display: block;
   left: 15px;
   top: 14px;
+}
+/*Jana mediaquery tablet*/
+@media (min-width: 768px) {
+  .image {
+    width: 100vw;
+    background-image: url("../images/imagen-cabecera.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .motto-rectangle {
+    width: 441px;
+    height: 80px;
+    opacity: 0.8;
+    margin: 0;
+    padding-left: 46px;
+  }
+  .motto {
+    padding-left: 46px;
+  }
+  .hero {
+    padding-left: 46px;
+  }
 }
 
 /*HEADER */
