@@ -21,13 +21,6 @@
   font-family: var(--FontOpenSans);
   margin-top: 45px;
 }
-@media (min-width: 768px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.5fr;
-  }
-}
 .footer-menu {
   grid-column: span 1;
   justify-self: center;
@@ -36,11 +29,6 @@
   color: var(--Gris);
   opacity: 0.75;
   text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .footer-menu {
-    grid-column: span 2;
-  }
 }
 .link-color:link {
   color: var(--Gris);
@@ -64,7 +52,6 @@
   padding-top: 30px;
 }
 .logo-size {
-  height: 45px;
   width: 115.9px;
 }
 .name-footer {
@@ -73,13 +60,39 @@
   color: #b8b8b9;
   padding-bottom: 20px;
 }
+
 @media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .footer-menu {
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+    width: 100%;
+    text-align: right;
+    line-height: 2.5;
+  }
+  .footer-menu-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+  }
   .name-footer {
-    grid-column: 3 / 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 0;
+    padding: 30px 45px;
+  }
+  .image-logo {
+    grid-column: 1 /2;
+    grid-row: 2/3;
+    margin-left: 0%;
+    padding: 15px 0 60px 45px;
   }
 }
+
 /* Hero image and Motto (Jana)*/
 .image {
   background-image: url("../images/imagen-cabecera-movil.png");
