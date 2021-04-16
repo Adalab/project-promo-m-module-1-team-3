@@ -1,0 +1,429 @@
+:root {
+  --FontRubik: Rubik;
+  --FontOpenSans: "Roboto", sans-serif;
+  --FontSize: 16px;
+  --Gris: #54585a;
+  --Grisclaro: #b8b8b9;
+  --Verdeclaro: #14d9c4;
+  --Verdeoscuro: #099d8d;
+  --WhiteBackground: white;
+}
+/* css Footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  border-top: solid #b8b8b9 1px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  font-family: var(--FontOpenSans);
+  margin-top: 45px;
+}
+.footer-menu {
+  grid-column: span 1;
+  justify-self: center;
+  text-align: center;
+  line-height: 1.43em;
+  color: var(--Gris);
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+.link-color:link {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.link-color:visited {
+  color: var(--gris);
+  text-decoration: none;
+}
+.link-color:hover {
+  color: var(--Verdeclaro);
+  text-decoration: none;
+}
+.link-color:active {
+  color: var(--Verdeoscuro);
+  text-decoration: none;
+}
+.image-logo {
+  grid-column: span 1;
+  justify-self: center;
+  padding-top: 30px;
+}
+.logo-size {
+  width: 115.9px;
+}
+.name-footer {
+  grid-column: span 1;
+  justify-self: center;
+  color: #b8b8b9;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .footer-menu {
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+    width: 100%;
+    text-align: right;
+    line-height: 2.5;
+  }
+  .footer-menu-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+  }
+  .name-footer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 0;
+    padding: 30px 45px;
+  }
+  .image-logo {
+    grid-column: 1 /2;
+    grid-row: 2/3;
+    margin-left: 0%;
+    padding: 15px 0 60px 45px;
+  }
+}
+
+/* Hero image and Motto (Jana)*/
+.image {
+  background-image: url("../images/imagen-cabecera-movil.png");
+  background-size: contain;
+  position: relative; /*with respect to the viewport*/
+  display: block;
+  width: 320px;
+  height: 421px;
+  margin: auto; /*changed for 2nd sprint from auto*/
+}
+/* .hero {
+  position: absolute; /*with respect to image
+  width: 320px;
+  height: 421px;
+} */
+.motto-rectangle {
+  background-color: #ffffff;
+  position: absolute; /*with respect to hero*/
+  width: 290px;
+  height: 80px;
+  display: block;
+  left: 15px;
+  top: 387px;
+  margin: 0;
+}
+.motto {
+  font-family: var(--FontOpenSans);
+  font-size: 18px;
+  font-style: normal; /*opcional*/
+  font-weight: 600; /*Semi-bold text*/
+  letter-spacing: normal;
+  color: black;
+  text-align: center;
+  position: absolute; /*with respect to motto-rectangle*/
+  width: 260px;
+  height: 50px;
+  display: block;
+  left: 15px;
+  top: 14px;
+}
+/*Jana mediaquery tablet*/
+@media (min-width: 768px) {
+  .image {
+    width: 100vw;
+    background-image: url("../images/imagen-cabecera.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .motto-rectangle {
+    width: 441px;
+    height: 80px;
+    opacity: 0.8;
+    margin: 0;
+    padding-left: 46px;
+  }
+  .motto {
+    padding-left: 46px;
+  }
+  .hero {
+    padding-left: 46px;
+  }
+}
+
+/*HEADER */
+.header_all {
+  width: 100%;
+  display: block;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header_base {
+  height: 60px;
+  padding: 25px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  font-family: Rubik;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  /* width: 160px;
+  height: 30px;
+  font-size: 16px; */
+}
+
+.menu_bar {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  /* width: 320px;
+  height: 45px;  */
+  /* margin: 60px 0 0; */
+  /* padding: 8px 17px 7px 16px; */
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.menu_list {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  margin: 0px 20px 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.equipo {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  color: #ffffff;
+}
+.quienes_somos {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contactos {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: Rubik;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.menu-link:link {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.menu-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+/*seccion Lorena:equipo, fortalezas y debilidades*/
+.section1 {
+  position: relative;
+}
+.section2 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.team-container {
+  font-family: var(--FontOpenSans);
+  padding: 35px 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 30px;
+  line-height: 1.2;
+}
+.team-title {
+  font-family: var(--FontOpenSans);
+  font-weight: 500;
+  height: 45px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeclaro);
+}
+.team-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
+
+.strengths-container {
+  font-family: var(--FontOpenSans);
+  padding: 30px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 1;
+}
+.strengths {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-container {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 4;
+  padding: 0px 15px 0px;
+}
+.weaknesses {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
+
+.section1 .section2 {
+  max-width: 320px;
+}
+
+/* text-align: center;
+  color: var(--aqua);
+} */
+
+/*hasta aqui la seccion de lorena*/
+
+.container-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 15px 0px 15px;
+  text-align: center;
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 16px; /*REVISAR*/
+  line-height: 1.5;
+  position: relative;
+}
+.anchor {
+  position: absolute;
+  top: -150px;
+}
+.title-description {
+  text-transform: uppercase;
+  font-family: var(--FontTipe); /*REVISAR*/
+  font-size: 24px;
+  color: var(--Verdeoscuro);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.name {
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 20px;
+  color: black;
+  height: 45px;
+  margin-top: 15px;
+}
+
+.text-description {
+  font-family: sans-serif; /*REVISAR*/
+  font-size: 16px; /*REVISAR*/
+  color: var(--Gris);
+}
+
+.social-media {
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.item-social {
+  color: var(--Verdeoscuro);
+  float: left;
+  margin: 10px;
+  font-size: 16px; /*REVISAR*/
+}
+.link:link {
+  color: var(--Verdeoscuro);
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--Verdeoscuro);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.link:active {
+  color: var(--Verdeclaro);
+  text-decoration: none;
+}
