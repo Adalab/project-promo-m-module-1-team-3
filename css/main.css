@@ -66,30 +66,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    padding: 24px 45px 56px 45px;
   }
   .footer-menu {
     grid-column: 2 / 3;
     grid-row: 1/3;
     width: 100%;
     text-align: right;
-    height: 90px;
+    line-height: 2.5;
   }
   .footer-menu-1 {
     display: flex;
     flex-direction: column;
+    padding: 25px 45px;
   }
   .name-footer {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 100%;
-  }
-  .madre-link {
+    margin-left: 0;
+    padding: 30px 45px;
   }
   .image-logo {
     grid-column: 1 /2;
     grid-row: 2/3;
-    width: 100%;
+    margin-left: 0%;
+    padding: 15px 0 60px 45px;
   }
 }
 
