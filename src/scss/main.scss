@@ -278,6 +278,7 @@
   .team-container {
     margin: 15px 0 0;
     line-height: 1.5;
+    padding: 45px 45px 30px;
   }
   .section2 {
     margin: 16px 0 0;
@@ -294,6 +295,27 @@
   .weaknesses-container {
     margin: 0 0;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+  .section2 {
+    margin: 16px 0 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  .strengths-container {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+  .weaknesses-container {
+    margin: 15px 1px 0 45px;
+    line-height: 1.5;
   }
 }
 
