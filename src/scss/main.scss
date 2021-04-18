@@ -413,6 +413,16 @@
   position: absolute;
   top: -150px;
 }
+
+.size-image {
+  background-image: url(//via.placeholder.com/180);
+  width: 180px;
+  height: 180px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
 .title-description {
   text-transform: uppercase;
   font-family: var(--FontTipe); /*REVISAR*/
@@ -466,4 +476,25 @@
 .link:active {
   color: var(--Verdeclaro);
   text-decoration: none;
+}
+
+.image-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .image-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .size-image {
+    width: 205px;
+    height: 205px;
+    background-image: url(//via.placeholder.com/205);
+    display: block;
+  }
 }
