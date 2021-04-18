@@ -1,5 +1,6 @@
 @import "core/variables";
 @import "core/reset";
+// @import "core/base";
 @import "components/code";
 @import "components/links";
 @import "layout/page";
@@ -18,119 +19,6 @@
   --WhiteBackground: white;
 }
 /* css Footer */
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  border-top: solid #b8b8b9 1px;
-  padding: 30px 15px 45px 15px;
-  font-size: 14px;
-  font-family: var(--FontOpenSans);
-  margin-top: 60px;
-}
-.footer-menu {
-  grid-column: span 1;
-  justify-self: center;
-  text-align: center;
-  line-height: 1.43em;
-  color: var(--Gris);
-  opacity: 0.75;
-  text-transform: uppercase;
-}
-.link-color:link {
-  color: var(--Gris);
-  text-decoration: none;
-}
-.link-color:visited {
-  color: var(--gris);
-  text-decoration: none;
-}
-.link-color:hover {
-  color: var(--Verdeclaro);
-  text-decoration: none;
-}
-.link-color:active {
-  color: var(--Verdeoscuro);
-  text-decoration: none;
-}
-.image-logo {
-  grid-column: span 1;
-  padding-top: 30px;
-  text-align: center;
-}
-.logo-size {
-  width: 115.9px;
-}
-.name-footer {
-  grid-column: span 1;
-  color: #b8b8b9;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    padding: 30px 45px 60px 45px;
-  }
-  .footer-menu {
-    grid-column: 2 / 3;
-    grid-row: 1/3;
-    width: 100%;
-    text-align: right;
-    line-height: 2.5;
-  }
-  .footer-menu-1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .name-footer {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-left: 0;
-    text-align: left;
-  }
-  .image-logo {
-    grid-column: 1 /2;
-    grid-row: 2/3;
-    margin-left: 0%;
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    padding: 30px 138px 51px 138px;
-  }
-  .footer-menu {
-    grid-column: 2 / 3;
-    grid-row: 1/3;
-    width: 100%;
-    text-align: right;
-    line-height: 2.5;
-  }
-  .footer-menu-1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .name-footer {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-left: 0;
-    text-align: left;
-  }
-  .image-logo {
-    grid-column: 1 /2;
-    grid-row: 2/3;
-    margin-left: 0%;
-    text-align: left;
-  }
-}
 
 /* Hero image and Motto (Jana)*/
 .image {
@@ -295,6 +183,34 @@
   text-decoration: none;
 }
 
+/*Marcela mediaquery tablet*/
+@media (min-width: 768px) {
+  .header_base {
+    height: 60px;
+  }
+  .menu_bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team_name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+
+  .equipo {
+  }
+
+  .menu_list {
+    height: 30px;
+    padding-right: 45px;
+    transform: translateY(-45px);
+  }
+}
+
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 .section1 {
   position: relative;
@@ -385,6 +301,51 @@
 /* text-align: center;
     color: var(--aqua);
   } */
+
+@media (min-width: 780px) {
+  .team-container {
+    margin: 15px 0 0;
+    line-height: 1.5;
+    padding: 45px 45px 30px;
+  }
+  .section2 {
+    margin: 16px 0 0;
+    padding: 45px 44.8px 60px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .strengths-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+  .weaknesses-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+  .section2 {
+    margin: 16px 0 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  .strengths-container {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+  .weaknesses-container {
+    margin: 15px 1px 0 45px;
+    line-height: 1.5;
+  }
+}
 
 /*hasta aqui la seccion de lorena*/
 
