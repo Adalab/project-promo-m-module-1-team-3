@@ -211,6 +211,35 @@
   }
 }
 
+/*Marcela mediaquery desktop*/
+@media (min-width: 1200px) {
+  .header_base {
+    height: 60px;
+  }
+  .menu_bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team_name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    padding-left: 138px;
+  }
+
+  .equipo {
+  }
+
+  .menu_list {
+    height: 30px;
+    padding-right: 142px;
+    transform: translateY(-45px);
+  }
+}
+
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 .section1 {
   position: relative;
