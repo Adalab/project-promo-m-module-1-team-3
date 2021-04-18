@@ -240,9 +240,27 @@
   }
 }
 
+/* white box*/
+
+.boxsection {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-15px);
+  margin-left: 44vw;
+}
+
+.whitebox {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 .section1 {
   position: relative;
+  background-color: #efefef;
 }
 .section2 {
   background-color: #efefef;
