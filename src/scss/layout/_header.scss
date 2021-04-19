@@ -76,15 +76,15 @@
   color: white;
   text-decoration: none;
 
-  &__-link:visited {
+  .menu-link:visited {
     color: white;
     text-decoration: none;
   }
-  &__-link:hover {
+  .menu-link:hover {
     color: var(--Gris);
     text-decoration: none;
   }
-  &__-link:active {
+  .menu-link:active {
     color: white;
     text-decoration: none;
   }
