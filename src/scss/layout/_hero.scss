@@ -1,19 +1,16 @@
 /* Hero image and Motto (Jana)*/
 .image {
-  background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash");
+  background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative; /*with respect to the viewport*/
   display: block;
   width: 100vw;
   height: 421px;
   margin-left: 0;
 }
-/* .hero {
-      position: absolute; /*with respect to image
-      width: 320px;
-      height: 421px;
-    } */
+
 .motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
@@ -64,7 +61,7 @@
 @media (min-width: 1200px) {
   .image {
     width: 100vw;
-    background-image: url("../images/imagen-cabecera.png");
+    background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
