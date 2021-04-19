@@ -107,9 +107,6 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  /* width: 160px;
-    height: 30px;
-    font-size: 16px; */
 }
 
 .menu_bar {
@@ -120,10 +117,6 @@
   align-items: center;
   align-content: center;
   list-style: none;
-  /* width: 320px;
-    height: 45px;  */
-  /* margin: 60px 0 0; */
-  /* padding: 8px 17px 7px 16px; */
   opacity: 0.9;
   background-color: #14d9c4;
 }
@@ -137,7 +130,6 @@
 }
 .equipo {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
@@ -146,7 +138,6 @@
 }
 .quienes_somos {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
@@ -158,7 +149,6 @@
 }
 .contactos {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: Rubik;
   font-stretch: normal;
   font-style: normal;
@@ -201,9 +191,6 @@
     padding-bottom: 15px;
   }
 
-  .equipo {
-  }
-
   .menu_list {
     height: 30px;
     padding-right: 45px;
@@ -228,9 +215,6 @@
     flex-direction: row;
     padding-bottom: 15px;
     padding-left: 138px;
-  }
-
-  .equipo {
   }
 
   .menu_list {
