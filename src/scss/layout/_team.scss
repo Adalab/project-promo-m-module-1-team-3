@@ -2,42 +2,42 @@
   position: relative;
   background-color: #efefef;
   max-width: 320px;
-  &__team-container {
-    font-family: var(--FontOpenSans);
-    padding: 35px 15px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    margin-top: 30px;
-    line-height: 1.2;
-    @media (min-width: 780px) {
-      margin: 15px 0 0;
-      line-height: 1.5;
-      padding: 45px 45px 30px;
-    }
-    @media (min-width: 1200px) {
-      line-height: 1.5;
-      padding: 45px 300px 60px 299px;
-    }
+}
 
-      &__team-title {
-        font-family: var(--FontOpenSans);
-        font-weight: 500;
-        height: 45px;
-        text-align: center;
-        font-size: 22px;
-        color: var(--Verdeclaro);
-      }
-      &__team-description {
-        font-family: var(--FontOpenSans);
-        font-size: 16px;
-        text-align: center;
-        color: var(--Gris);
-      }
-    }
+.team-container {
+  font-family: "Open Sans", arial;
+  padding: 35px 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 30px;
+  line-height: 1.2;
+  @media all and (min-width: 780px) {
+    margin: 15px 0 0;
+    line-height: 1.5;
+    padding: 45px 45px 30px;
   }
+  @media all and (min-width: 1200px) {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+}
+
+.team-title {
+  font-family: "Open Sans", arial;
+  font-weight: 500;
+  height: 45px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeclaro);
+}
+.team-description {
+  font-family: "Open Sans", arial;
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
 }
 
 .section2 {
@@ -59,52 +59,53 @@
     margin: 15px 38.2px 0 0;
     line-height: 1.5;
   }
-
-  &__strengths-container {
-    font-family: var(--FontOpenSans);
-    margin: 0 0;
-    padding: 30px 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    line-height: 1.5;
-    color: var(--Gris);
-    flex-grow: 1;
-  
-  &__strengths {
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    font-size: 22px;
-    color: var(--Verdeoscuro);
-  }
 }
 
-  &__weaknesses-container {
-    margin-top: 30px;
-    margin-bottom: 45px;
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.5;
-    color: var(--Gris);
-    flex-grow: 4;
-    padding: 0px 15px 0px;
+.strengths-container {
+  font-family: "Open Sans", arial;
+  margin: 0 0;
+  padding: 30px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 1;
+}
 
-  &__weaknesses {
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    font-weight: 500;
-    font-size: 22px;
-    color: var(--Verdeoscuro);
-  }
+.strengths {
+  font-family: "Open Sans", arial;
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
 
-  &__weaknesses-description {
-    font-family: var(--FontOpenSans);
-    font-size: 16px;
-    text-align: center;
-    color: var(--Gris);
-  }
+.weaknesses-container {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-family: "Open Sans", arial;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 4;
+  padding: 0px 15px 0px;
+}
+
+.weaknesses {
+  font-family: "Open Sans", arial;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+
+.weakenesses-description {
+  font-family: "Open Sans", arial;
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
 }
