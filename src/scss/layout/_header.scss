@@ -137,3 +137,14 @@
     transform: translateY(-45px);
   }
 }
+
+// /* white box*/
+
+.whitebox {
+  position: absolute;
+  left: 50vw;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
