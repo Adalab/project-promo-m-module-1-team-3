@@ -2,42 +2,35 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  border-top: solid #b8b8b9 1px;
-  padding: 30px 15px 45px 15px;
-  font-size: 14px;
-  font-family: var(--FontOpenSans);
-  margin-top: 60px;
+  border-top: solid $Grisclaro 1px;
+  padding: 30px 15px;
+  padding-bottom: 45px;
+  font-size: $FontSizeSmall;
   &__copy {
     grid-column: span 1;
-    color: #b8b8b9;
+    color: $Grisclaro;
     padding-bottom: 20px;
     text-align: center;
   }
   &__menu {
     grid-column: span 1;
-    justify-self: center;
     text-align: center;
     line-height: 1.43em;
-    color: var(--Gris);
+    color: $ColorGris;
     opacity: 0.75;
     text-transform: uppercase;
   }
   &__menu-link {
-    color: var(--Gris);
+    color: $ColorGris;
     padding: 2px;
     text-decoration: none;
     &:focus,
     &:hover {
-      color: var(--Verdeclaro);
+      color: $Verdeclaro;
       text-decoration: none;
     }
-    // &:visited {
-    //   color: var(--gris);
-    //   color: red;
-    //   text-decoration: none;
-    // }
     &:active {
-      color: var(--Verdeoscuro);
+      color: $Verdeoscuro;
       text-decoration: none;
     }
   }
@@ -58,7 +51,6 @@
     &__copy {
       grid-column: 1/2;
       grid-row: 1/2;
-      margin-left: 0;
       text-align: left;
     }
     &__menu {

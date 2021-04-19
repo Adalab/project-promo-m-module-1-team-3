@@ -7,19 +7,10 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/hero";
+@import "layout/contact";
 @import "pages/index";
 @import "layout/team";
 
-:root {
-  --FontRubik: "Rubik", sans-serif;
-  --FontOpenSans: "Roboto", sans-serif;
-  --FontSize: 16px;
-  --Gris: #54585a;
-  --Grisclaro: #b8b8b9;
-  --Verdeclaro: #14d9c4;
-  --Verdeoscuro: #099d8d;
-  --WhiteBackground: white;
-}
 /* css Footer */
 body {
   padding: 0;
@@ -49,9 +40,6 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  /* width: 160px;
-    height: 30px;
-    font-size: 16px; */
 }
 
 .menu_bar {
@@ -62,10 +50,6 @@ body {
   align-items: center;
   align-content: center;
   list-style: none;
-  /* width: 320px;
-    height: 45px;  */
-  /* margin: 60px 0 0; */
-  /* padding: 8px 17px 7px 16px; */
   opacity: 0.9;
   background-color: #14d9c4;
 }
@@ -79,7 +63,6 @@ body {
 }
 .equipo {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
@@ -88,7 +71,6 @@ body {
 }
 .quienes_somos {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
@@ -100,7 +82,6 @@ body {
 }
 .contactos {
   text-transform: uppercase;
-  /* height: 30px; */
   font-family: Rubik;
   font-stretch: normal;
   font-style: normal;
@@ -169,9 +150,6 @@ body {
     padding-left: 138px;
   }
 
-  .equipo {
-  }
-
   .menu_list {
     height: 30px;
     padding-right: 142px;
@@ -179,25 +157,155 @@ body {
   }
 }
 
-/* white box*/
-
-.boxsection {
-  box-sizing: border-box;
-  width: 30px;
-  height: 30px;
-  transform: translateY(-15px);
-  margin-left: 44vw;
-}
+// /* white box*/
 
 .whitebox {
+  position: absolute;
+  left: 50vw;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  transform: rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
+<<<<<<< HEAD
 
+=======
+.section1 {
+  background-color: #efefef;
+}
+.section2 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.team-container {
+  font-family: var(--FontOpenSans);
+  padding: 35px 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  line-height: 1.2;
+}
+.team-title {
+  font-family: var(--FontOpenSans);
+  font-weight: 500;
+  height: 45px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeclaro);
+}
+.team-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
+
+.strengths-container {
+  font-family: var(--FontOpenSans);
+  padding: 30px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 1;
+}
+.strengths {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-container {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 4;
+  padding: 0px 15px 0px;
+}
+.weaknesses {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
+
+.section1 .section2 {
+  max-width: 320px;
+}
+
+/* text-align: center;
+    color: var(--aqua);
+  } */
+
+@media (min-width: 780px) {
+  .team-container {
+    margin: 15px 0 0;
+    line-height: 1.5;
+    padding: 45px 45px 30px;
+  }
+  .section2 {
+    margin: 0;
+    padding: 45px 44.8px 60px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .strengths-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+  .weaknesses-container {
+    margin: 0;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+  .section2 {
+    margin: 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  .strengths-container {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+  .weaknesses-container {
+    margin: 15px 1px 0 45px;
+    line-height: 1.5;
+  }
+}
+>>>>>>> 7f6508038f2dbbc412eef1acc307bf2273cc9caa
 
 /*hasta aqui la seccion de lorena*/
 
