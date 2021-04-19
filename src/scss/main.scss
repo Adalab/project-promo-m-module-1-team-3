@@ -19,16 +19,19 @@
   --WhiteBackground: white;
 }
 /* css Footer */
-
+body {
+  padding: 0;
+}
 /* Hero image and Motto (Jana)*/
 .image {
-  background-image: url("../images/imagen-cabecera-movil.png");
-  background-size: contain;
+  background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative; /*with respect to the viewport*/
   display: block;
-  width: 320px;
+  width: 100vw;
   height: 421px;
-  margin: auto; /*changed for 2nd sprint from auto*/
+  margin-left: 0;
 }
 /* .hero {
     position: absolute; /*with respect to image
@@ -42,8 +45,8 @@
   height: 80px;
   display: block;
   left: 15px;
-  top: 387px;
-  margin: 0;
+  top: 365px;
+  padding-top: 15px;
 }
 .motto {
   font-family: var(--FontOpenSans);
@@ -58,10 +61,31 @@
   height: 50px;
   display: block;
   left: 15px;
-  top: 14px;
+  top: 20px;
 }
 /*Jana mediaquery tablet*/
 @media (min-width: 768px) {
+  .image {
+    width: 100vw;
+    background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+  }
+  .motto-rectangle {
+    width: 441px;
+    height: 80px;
+    opacity: 0.8;
+    margin-left: 46px;
+    margin-right: 281px;
+    /* padding-left: 46px; */
+  }
+  .motto {
+    width: 381px;
+  }
+  .hero {
+    padding-left: 46px;
+  }
+}
+/*Jana mediaquery tablet PC*/
+@media (min-width: 1200px) {
   .image {
     width: 100vw;
     background-image: url("../images/imagen-cabecera.png");
@@ -69,17 +93,16 @@
     background-repeat: no-repeat;
   }
   .motto-rectangle {
-    width: 441px;
-    height: 80px;
+    width: 574px;
+    height: 90px;
     opacity: 0.8;
-    margin: 0;
-    padding-left: 46px;
+    margin-left: 138px;
+    margin-right: 488px;
+    /* padding-left: 46px; */
   }
   .motto {
-    padding-left: 46px;
-  }
-  .hero {
-    padding-left: 46px;
+    width: 514px;
+    font-size: 24px;
   }
 }
 
