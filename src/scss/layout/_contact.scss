@@ -10,20 +10,6 @@
     height: 300px;
   }
 }
-@media (min-width: 768px) {
-  .image {
-    width: 100vw;
-    background-image: url("../images/photo-contact.jpg");
-  }
-}
-@media (min-width: 1200px) {
-  .image {
-    width: 100vw;
-    background-image: url("../images/photo-contact.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 
 .container {
   min-height: 100vh;
