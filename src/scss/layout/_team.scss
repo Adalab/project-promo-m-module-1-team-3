@@ -39,44 +39,43 @@
   }
 }
 
-  .section2 {
-    background-color: #efefef;
+.section2 {
+  background-color: #efefef;
+  margin: 16px 0 0;
+  padding: 45px 44.8px 60px 45px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 780px) {
     margin: 16px 0 0;
     padding: 45px 44.8px 60px 45px;
-    max-width: 320px;
+  }
+  @media (min-width: 1200px) {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+
+  &__strengths-container {
+    font-family: var(--FontOpenSans);
+    margin: 0 0;
+    padding: 30px 15px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-    @media (min-width: 780px) {
-      margin: 16px 0 0;
-      padding: 45px 44.8px 60px 45px;
-    }
-    @media (min-width: 1200px) {
-      margin: 15px 38.2px 0 0;
-      line-height: 1.5;
-    }
-
-    &__strengths-container {
-      font-family: var(--FontOpenSans);
-      margin: 0 0;
-      padding: 30px 15px 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      line-height: 1.5;
-      color: var(--Gris);
-      flex-grow: 1;
-    }
-    &__strengths {
-      font-family: var(--FontOpenSans);
-      text-align: center;
-      font-size: 22px;
-      color: var(--Verdeoscuro);
-    }
+    line-height: 1.5;
+    color: var(--Gris);
+    flex-grow: 1;
+  }
+  &__strengths {
+    font-family: var(--FontOpenSans);
+    text-align: center;
+    font-size: 22px;
+    color: var(--Verdeoscuro);
   }
 
   &__weaknesses-container {
@@ -91,20 +90,20 @@
     color: var(--Gris);
     flex-grow: 4;
     padding: 0px 15px 0px;
+  }
 
-    &__weaknesses {
-      font-family: var(--FontOpenSans);
-      text-align: center;
-      font-weight: 500;
-      font-size: 22px;
-      color: var(--Verdeoscuro);
-    }
+  &__weaknesses {
+    font-family: var(--FontOpenSans);
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--Verdeoscuro);
+  }
 
-    &__weaknesses-description {
-      font-family: var(--FontOpenSans);
-      font-size: 16px;
-      text-align: center;
-      color: var(--Gris);
-    }
+  &__weaknesses-description {
+    font-family: var(--FontOpenSans);
+    font-size: 16px;
+    text-align: center;
+    color: var(--Gris);
   }
 }
