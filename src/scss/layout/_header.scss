@@ -10,17 +10,17 @@
   left: 0;
   width: 100%;
   z-index: 999;
+}
 
-  &__base {
-    height: 60px;
-    padding: 25px;
-    opacity: 0.95;
-    background-color: #099d8d;
-    font-family: Rubik;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.header_base {
+  height: 60px;
+  padding: 25px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  font-family: Rubik;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .menu_bar {
@@ -33,15 +33,14 @@
   list-style: none;
   opacity: 0.9;
   background-color: #14d9c4;
-
-  &__list {
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    margin: 0px 20px 0px 20px;
-    align-items: center;
-    justify-content: space-between;
-  }
+}
+.menu_list {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  margin: 0px 20px 0px 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .equipo {
@@ -75,19 +74,18 @@
 .menu-link:link {
   color: white;
   text-decoration: none;
-
-  .menu-link:visited {
-    color: white;
-    text-decoration: none;
-  }
-  .menu-link:hover {
-    color: var(--Gris);
-    text-decoration: none;
-  }
-  .menu-link:active {
-    color: white;
-    text-decoration: none;
-  }
+}
+.menu-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.menu-link:active {
+  color: white;
+  text-decoration: none;
 }
 
 /*Marcela mediaquery tablet*/
