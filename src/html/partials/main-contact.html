@@ -1,0 +1,48 @@
+<main class="container">
+    <div class="central-colum">
+        <section class="section">
+            <h2 class="section__title">
+                Contact
+            </h2>
+            <p class="section__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit recusandae aperiam blanditiis tempore
+                rerum
+                ut quis ducimus, suscipit magnam repellat, repudiandae quos illum corporis, quae ullam eum. Dolorum,
+                repudiandae est!
+            </p>
+            <p class="section__text-all">Todos los campos marcados con <span class="star">*</span> son
+                obligatorios</p>
+            <form action="" class="section__form" method="post">
+                <div class="section__form--name">
+                    <label for="firstname"> Nombre completo
+                        <span class="star">*</span>
+                    </label>
+                    <input class="section__form--box" type="text" id="firstname" name="firstname" placeholder="Nombre"
+                        required>
+                </div>
+                <div class="section__form--email">
+                    <label for="email"> E-mail
+                        <span class="star">*</span>
+                    </label>
+                    <input class="section__form--box" type="email" id="email" name="email"
+                        placeholder="nombre.apellidos@mail.com" required>
+                </div>
+                <div class="section__form--phone">
+                    <label for="phone"> Phone
+                    </label>
+                    <input class="section__form--box" type="tel" id="phone" name="phone" placeholder="ej.: 633012794">
+                </div>
+                <div class="section__form--text">
+                    <label for="message"> Mensaje
+                        <span class="star">*</span>
+                    </label>
+                    <textarea class="section__form--box section__form--box-message" id="message" name="message" rows="8"
+                        cols="25%" placeholder="What do you need?" required></textarea>
+                </div>
+                <div>
+                    <input class="section__form--box section__form--bottom" type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </section>
+    </div>
+</main>

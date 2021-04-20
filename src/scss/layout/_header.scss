@@ -1,5 +1,155 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  &__all {
+    width: 100%;
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  &__base {
+    height: 60px;
+    padding: 25px;
+    opacity: 0.95;
+    background-color: #099d8d;
+    font-family: Rubik;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.menu {
+  &__bar {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    opacity: 0.9;
+    background-color: #14d9c4;
+  }
+
+  &__list {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.equipo {
+  text-transform: uppercase;
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  color: #ffffff;
+}
+.quienes_somos {
+  text-transform: uppercase;
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contactos {
+  text-transform: uppercase;
+  font-family: Rubik;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.menu-link:link {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.menu-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+/*Marcela mediaquery tablet*/
+@media (min-width: 768px) {
+  .header__base {
+    height: 60px;
+  }
+  .menu__bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team-name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+
+  .menu__list {
+    height: 30px;
+    padding-right: 45px;
+    transform: translateY(-45px);
+  }
+}
+
+/*Marcela mediaquery desktop*/
+@media (min-width: 1200px) {
+  .header__base {
+    height: 60px;
+  }
+  .menu__bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team-name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    padding-left: 138px;
+  }
+
+  .menu__list {
+    height: 30px;
+    padding-right: 142px;
+    transform: translateY(-45px);
+  }
+}
+
+// /* white box*/
+
+.whitebox {
+  position: absolute;
+  left: 50vw;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) rotate(45deg);
 }

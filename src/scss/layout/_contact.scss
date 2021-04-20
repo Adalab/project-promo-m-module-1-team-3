@@ -1,0 +1,108 @@
+.image-container {
+  width: 100%;
+  margin: auto;
+  &__image {
+    background-image: url("../images/photo-contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 24px;
+    color: $Verdeoscuro;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+  &__text {
+    color: $ColorGris;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  &__text-all {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  &__form {
+    margin-top: 58px;
+    text-align: left;
+    width: 100%;
+    &--name {
+      display: flex;
+      flex-direction: column;
+      font-size: $FontSizeSmall;
+      color: $ColorGris;
+    }
+    &--email {
+      display: flex;
+      flex-direction: column;
+      font-size: $FontSizeSmall;
+      color: $ColorGris;
+    }
+    &--phone {
+      display: flex;
+      flex-direction: column;
+      font-size: $FontSizeSmall;
+      color: $ColorGris;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      font-size: $FontSizeSmall;
+      color: $ColorGris;
+    }
+    &--box {
+      width: 100%;
+      height: 45px;
+      margin-top: 7px;
+      margin-bottom: 13px;
+      border: solid 1px $Grisclaro;
+      padding: 0;
+    }
+    &--box-message {
+      height: 105px;
+      margin-top: 7px;
+    }
+    &--bottom {
+      display: block;
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: $Verdeoscuro;
+      color: white;
+      font-size: 16px;
+      border: none;
+      width: 100%;
+    }
+    ::placeholder {
+      color: $Grisclaro;
+      font-size: 14px;
+      padding-left: 15px;
+    }
+  }
+}
+.star {
+  color: $Verdeclaro;
+}
+.central-colum {
+  margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 163px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto 300px;
+  }
+}

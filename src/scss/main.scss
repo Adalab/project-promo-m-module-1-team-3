@@ -8,18 +8,10 @@
 @import "layout/descriptions";
 @import "layout/footer";
 @import "layout/hero";
+@import "layout/contact";
 @import "pages/index";
+@import "layout/team";
 
-:root {
-  --FontRubik: "Rubik", sans-serif;
-  --FontOpenSans: "Roboto", sans-serif;
-  --FontSize: 16px;
-  --Gris: #54585a;
-  --Grisclaro: #b8b8b9;
-  --Verdeclaro: #14d9c4;
-  --Verdeoscuro: #099d8d;
-  --WhiteBackground: white;
-}
 /* css Footer */
 body {
   padding: 0;
@@ -167,9 +159,6 @@ body {
     flex-direction: row;
     padding-bottom: 15px;
     padding-left: 138px;
-  }
-
-  .equipo {
   }
 
   .menu_list {
@@ -333,3 +322,12 @@ body {
 }
 
 /*hasta aqui la seccion de lorena*/
+.image-description {
+  margin-left: 138px;
+  margin-right: 138px;
+}
+
+.size-image {
+  height: 278px;
+  width: 278px;
+}
