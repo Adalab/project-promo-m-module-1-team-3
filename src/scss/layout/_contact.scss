@@ -14,8 +14,7 @@
 .container {
   min-height: 100vh;
   margin-top: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-bottom: 60px;
 }
 .section {
   display: flex;
@@ -41,6 +40,7 @@
   &__form {
     margin-top: 58px;
     text-align: left;
+    width: 100%;
     &--name {
       display: flex;
       flex-direction: column;
@@ -66,12 +66,12 @@
       color: $ColorGris;
     }
     &--box {
-      width: 290px;
+      width: 100%;
       height: 45px;
       margin-top: 7px;
       margin-bottom: 13px;
       border: solid 1px $Grisclaro;
-      padding-left: 15px;
+      padding: 0;
     }
     &--box-message {
       height: 105px;
@@ -90,9 +90,19 @@
     ::placeholder {
       color: $Grisclaro;
       font-size: 14px;
+      padding-left: 15px;
     }
   }
 }
 .star {
   color: $Verdeclaro;
+}
+.central-colum {
+  margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 163px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto 300px;
+  }
 }

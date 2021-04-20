@@ -1,9 +1,21 @@
+.central-colum {
+  margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 163px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto 300px;
+  }
+}
+
+.footer-gray {
+  border-top: solid $Grisclaro 1px;
+}
 .footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  border-top: solid $Grisclaro 1px;
-  padding: 30px 15px;
+  padding-top: 30px;
   padding-bottom: 45px;
   font-size: $FontSizeSmall;
   &__copy {
@@ -46,7 +58,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    padding: 30px 45px;
+    padding-top: 30px;
     padding-bottom: 60px;
     &__copy {
       grid-column: 1/2;
@@ -84,7 +96,7 @@
     text-align: left;
   }
   @media (min-width: 1200px) {
-    padding: 30px 138px;
+    padding-top: 30px;
     padding-bottom: 51px;
   }
 }
