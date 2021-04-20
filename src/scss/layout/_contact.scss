@@ -85,6 +85,11 @@
       color: white;
       font-size: 16px;
       border: none;
+      width: 100%;
+    }
+    ::placeholder {
+      color: $Grisclaro;
+      font-size: 14px;
     }
   }
 }
