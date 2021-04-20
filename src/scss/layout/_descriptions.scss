@@ -74,11 +74,11 @@
   font-size: 16px; /*REVISAR*/
 }
 .link:link {
-  color: var(--Verdeoscuro);
+  color: $Verdeoscuro;
   text-decoration: none;
 }
 .link:visited {
-  color: var(--Verdeoscuro);
+  color: $Verdeoscuro;
   text-decoration: none;
 }
 .link:hover {
@@ -86,7 +86,7 @@
   text-decoration: none;
 }
 .link:active {
-  color: var(--Verdeclaro);
+  color: $Verdeclaro;
   text-decoration: none;
 }
 
