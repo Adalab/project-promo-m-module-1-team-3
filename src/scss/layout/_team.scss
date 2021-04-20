@@ -1,32 +1,27 @@
 .section1 {
-  position: relative;
   background-color: #efefef;
-  max-width: 320px;
+}
+.section2 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 .team-container {
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   padding: 35px 15px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
-  margin-top: 30px;
   line-height: 1.2;
-  @media all and (min-width: 780px) {
-    margin: 15px 0 0;
-    line-height: 1.5;
-    padding: 45px 45px 30px;
-  }
-  @media all and (min-width: 1200px) {
-    line-height: 1.5;
-    padding: 45px 300px 60px 299px;
-  }
 }
-
 .team-title {
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   font-weight: 500;
   height: 45px;
   text-align: center;
@@ -34,36 +29,14 @@
   color: var(--Verdeclaro);
 }
 .team-description {
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   font-size: 16px;
   text-align: center;
   color: var(--Gris);
 }
 
-.section2 {
-  background-color: #efefef;
-  margin: 16px 0 0;
-  padding: 45px 44.8px 60px 45px;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  @media (min-width: 780px) {
-    margin: 16px 0 0;
-    padding: 45px 44.8px 60px 45px;
-  }
-  @media (min-width: 1200px) {
-    margin: 15px 38.2px 0 0;
-    line-height: 1.5;
-  }
-}
-
 .strengths-container {
-  font-family: "Open Sans", arial;
-  margin: 0 0;
+  font-family: var(--FontOpenSans);
   padding: 30px 15px 0px;
   display: flex;
   flex-direction: column;
@@ -73,18 +46,16 @@
   color: var(--Gris);
   flex-grow: 1;
 }
-
 .strengths {
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   text-align: center;
   font-size: 22px;
   color: var(--Verdeoscuro);
 }
-
 .weaknesses-container {
   margin-top: 30px;
   margin-bottom: 45px;
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -94,18 +65,69 @@
   flex-grow: 4;
   padding: 0px 15px 0px;
 }
-
 .weaknesses {
-  font-family: "Open Sans", arial;
+  font-family: var(--FontOpenSans);
   text-align: center;
   font-weight: 500;
   font-size: 22px;
   color: var(--Verdeoscuro);
 }
-
-.weakenesses-description {
-  font-family: "Open Sans", arial;
+.weaknesses-description {
+  font-family: var(--FontOpenSans);
   font-size: 16px;
   text-align: center;
   color: var(--Gris);
+}
+
+.section1 .section2 {
+  max-width: 320px;
+}
+
+/* text-align: center;
+    color: var(--aqua);
+  } */
+
+@media (min-width: 780px) {
+  .team-container {
+    margin: 15px 0 0;
+    line-height: 1.5;
+    padding: 45px 45px 30px;
+  }
+  .section2 {
+    margin: 0;
+    padding: 45px 44.8px 60px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .strengths-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+  .weaknesses-container {
+    margin: 0;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+  .section2 {
+    margin: 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  .strengths-container {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+  .weaknesses-container {
+    margin: 15px 1px 0 45px;
+    line-height: 1.5;
+  }
 }
