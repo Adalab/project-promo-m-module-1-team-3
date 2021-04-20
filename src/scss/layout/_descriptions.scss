@@ -63,6 +63,14 @@
   margin: 10px;
   font-size: 16px; /*REVISAR*/
 }
+.deco:after {
+  content: ".";
+  color: rgb(87, 84, 84);
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
 .link:link {
   color: $Verdeoscuro;
   text-decoration: none;
