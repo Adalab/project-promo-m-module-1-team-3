@@ -1,8 +1,6 @@
 .item-description {
   margin: 30px 15px 0px 15px;
   text-align: center;
-  font-family: sans-serif; /*REVISAR*/
-  font-size: 16px; /*REVISAR*/
   line-height: 1.5;
   position: relative;
 }
@@ -35,7 +33,6 @@
 }
 
 .about-item__name {
-  font-family: sans-serif; /*REVISAR*/
   font-size: 20px;
   color: black;
   height: 45px;
@@ -80,16 +77,17 @@
   color: var(--Verdeoscuro);
   text-decoration: none;
 }
+
 .link:visited {
-  color: var(--Verdeoscuro);
+  color: $Verdeoscuro;
   text-decoration: none;
 }
 .link:hover {
-  color: var(--Gris);
+  color: $ColorGris;
   text-decoration: none;
 }
 .link:active {
-  color: var(--Verdeclaro);
+  color: $Verdeclaro;
   text-decoration: none;
 }
 
