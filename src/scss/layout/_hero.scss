@@ -46,11 +46,15 @@
     width: 441px;
     height: 80px;
     opacity: 0.8;
-    margin-left: 46px;
+    //margin-left: 46px;
     margin-right: 281px;
     /* padding-left: 46px; */
   }
-  .motto {
+  .image__motto-rectangle {
+    margin-left: 45px;
+  }
+
+  .image__motto {
     width: 381px;
   }
   .hero {
@@ -65,15 +69,18 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .motto-rectangle {
+
+  //.motto-rectangle {
+
+  .image__motto-rectangle {
     width: 574px;
     height: 90px;
-    opacity: 0.8;
     margin-left: 138px;
     margin-right: 488px;
+    background-color: rgba(255, 255, 255, 0.8);
     /* padding-left: 46px; */
   }
-  .motto {
+  .image__motto {
     width: 514px;
     font-size: 24px;
   }
