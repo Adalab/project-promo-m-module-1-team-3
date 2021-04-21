@@ -1,3 +1,13 @@
+.central-column-contact {
+  margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 163px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto 300px;
+  }
+}
+
 .image-container {
   width: 100%;
   margin: auto;
@@ -12,11 +22,10 @@
 }
 
 .container {
-  min-height: 100vh;
   margin-top: 30px;
   margin-bottom: 60px;
 }
-.section {
+.section-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,23 +95,48 @@
       font-size: 16px;
       border: none;
       width: 100%;
+      @media (min-width: 768px) {
+        margin-right: 0;
+        margin-left: auto;
+        width: 206px;
+      }
     }
     ::placeholder {
       color: $Grisclaro;
       font-size: 14px;
       padding-left: 15px;
+      padding-top: 7px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      &--name {
+        width: 100%;
+      }
+      &--email {
+        width: 50%;
+        margin-right: 45px;
+      }
+      &--phone {
+        width: 25%;
+        flex-grow: 1;
+      }
+      &--text {
+        width: 100%;
+      }
+      &--bottom {
+        margin-left: 0;
+        margin-right: auto;
+        width: 278px;
+      }
     }
   }
 }
+
 .star {
   color: $Verdeclaro;
-}
-.central-colum {
-  margin: auto 15px;
-  @media (min-width: 768px) {
-    margin: auto 163px;
-  }
-  @media (min-width: 1200px) {
-    margin: auto 300px;
-  }
 }
