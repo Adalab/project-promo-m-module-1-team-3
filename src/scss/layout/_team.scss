@@ -54,6 +54,10 @@
     color: var(--Gris);
     flex-grow: 1;
   }
+
+  .bold {
+    font-weight: bold;
+  }
   &__strengths-title {
     font-family: var(--FontOpenSans);
     text-align: center;

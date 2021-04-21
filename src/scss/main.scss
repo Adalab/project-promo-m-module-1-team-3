@@ -183,19 +183,52 @@ body {
 /* white box*/
 
 .boxsection {
-  box-sizing: border-box;
-  width: 30px;
-  height: 30px;
-  transform: translateY(-15px);
-  margin-left: 44vw;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .whitebox {
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
+  transform: translateY(-15px);
+  // transform: rotate(45deg);
+  background-color: white;
 }
+
+// .boxsection {
+//   box-sizing: border-box;
+//   width: 30px;
+//   height: 30px;
+//   transform: translateY(-15px);
+//   margin-left: 44vw;
+// }
+
+// .whitebox {
+//   width: 30px;
+//   height: 30px;
+//   background-color: #ffffff;
+//   transform: rotate(45deg);
+// }
+
+// /* white box*/
+
+// .whitebox {
+//   position: absolute;
+//   left: 50vw;
+//   width: 30px;
+//   height: 30px;
+//   background-color: #ffffff;
+//   transform: translate(-50%, -50%) rotate(45deg);
+
+// .boxsection {
+//   display: flex;
+//   padding-right: 15px;
+// }
+
+// .whitebox {
+// }
 
 /*seccion Lorena:equipo, fortalezas y debilidades*/
 .section1 {
