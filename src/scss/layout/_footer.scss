@@ -1,15 +1,16 @@
-.central-colum {
+.central-column {
   margin: auto 15px;
   @media (min-width: 768px) {
-    margin: auto 163px;
+    margin: auto 45px;
   }
   @media (min-width: 1200px) {
-    margin: auto 300px;
+    margin: auto 138px;
   }
 }
 
 .footer-gray {
   border-top: solid $Grisclaro 1px;
+  margin-top: 60px;
 }
 .footer {
   display: grid;
@@ -34,12 +35,14 @@
   }
   &__menu-link {
     color: $ColorGris;
-    padding: 2px;
+    padding: 15px;
+    line-height: 2.4;
     text-decoration: none;
     &:focus,
     &:hover {
       color: $Verdeclaro;
       text-decoration: none;
+      font-size: 120%;
     }
     &:active {
       color: $Verdeoscuro;
