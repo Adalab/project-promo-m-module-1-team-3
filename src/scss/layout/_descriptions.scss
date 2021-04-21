@@ -102,6 +102,9 @@
   .image-description:nth-child(even) {
     flex-direction: row-reverse;
   }
+  .rigth {
+    text-align: right;
+  }
 
   .size-image {
     width: 205px;
