@@ -55,9 +55,6 @@
     flex-grow: 1;
   }
 
-  .bold {
-    font-weight: bold;
-  }
   &__strengths-title {
     font-family: var(--FontOpenSans);
     text-align: center;
@@ -125,4 +122,8 @@
 
 .team .section {
   max-width: 320px;
+}
+
+.bold {
+  font-weight: bold;
 }

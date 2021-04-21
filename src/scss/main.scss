@@ -202,8 +202,10 @@ body {
 .whitebox {
   width: 30px;
   height: 30px;
-  transform: translateX(-30px);
+  // transform: translateX(-15px);
   background-color: white;
+
+  transform: translate(-50% -50%);
   transform: rotate(45deg);
 }
 
