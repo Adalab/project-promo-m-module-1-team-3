@@ -9,7 +9,6 @@
   width: 100vw;
   height: 421px;
   margin-left: 0;
-
   &__motto-rectangle {
     background-color: #ffffff;
     position: absolute; /*with respect to hero*/
@@ -20,7 +19,6 @@
     top: 365px;
     padding-top: 15px;
   }
-
   &__motto {
     font-family: var(--FontOpenSans);
     font-size: 18px;
@@ -37,7 +35,6 @@
     top: 20px;
   }
 }
-
 
 /*Jana mediaquery tablet*/
 @media (min-width: 768px) {

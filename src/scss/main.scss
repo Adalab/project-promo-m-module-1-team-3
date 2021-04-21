@@ -17,18 +17,17 @@ body {
   padding: 0;
 }
 
-// /*Central column*/
-// .central-column {
-//   max-width: 600px;
-//   margin: 0 auto;
+/*Central column*/
+.central-column {
+  margin: auto 15px;
 
-//   @media all and(min-width: 768px) {
-//     max-width: 700px;
-//   }
-//   @media all and(min-width: 1280px) {
-//     max-width: 1120px;
-//   }
-// }
+  @media all and(min-width: 768px) {
+    margin: auto 45px;
+  }
+  @media all and(min-width: 1280px) {
+    margin: auto 138px;
+  }
+}
 
 .central-column {
   margin: auto 15px;
