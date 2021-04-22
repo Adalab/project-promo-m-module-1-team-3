@@ -1,26 +1,25 @@
 /* Hero image and Motto (Jana)*/
-/* Hero image and Motto (Jana)*/
 .image {
   background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative; /*with respect to the viewport*/
   display: block;
   width: 100vw;
   height: 421px;
-  margin: auto; /*changed for 2nd sprint from auto*/
+  margin-left: 0;
 }
-.hero {
-  position: absolute; /*with respect to image*/
-}
+
 .motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
   width: 290px;
   height: 80px;
-  left: 15px;
+  display: block;
   top: 365px;
   padding-top: 15px;
+  transform: translate(50%, 25%);
 }
 .motto {
   font-family: var(--FontOpenSans);
@@ -49,8 +48,8 @@
     width: 441px;
     height: 80px;
     opacity: 0.8;
-    margin-left: 46px;
     margin-right: 281px;
+    transform: translate(45px, 0);
     /* padding-left: 46px; */
   }
   .motto {
@@ -60,8 +59,7 @@
     padding-left: 46px;
   }
 }
-
-/*Jana mediaquery tablet PC*/
+/*Jana mediaquery tablet*/
 @media (min-width: 1200px) {
   .image {
     width: 100vw;
@@ -73,8 +71,9 @@
     width: 574px;
     height: 90px;
     opacity: 0.8;
-    margin-left: 138px;
     margin-right: 488px;
+    transform: translate(138px, 0);
+
     /* padding-left: 46px; */
   }
   .motto {
