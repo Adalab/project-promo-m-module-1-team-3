@@ -85,7 +85,11 @@
 .link:hover {
   color: $ColorGris;
   text-decoration: none;
-  font-size: 120%;
+  font-size: 150%;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  cursor: none;
 }
 .link:active {
   color: $Verdeclaro;
