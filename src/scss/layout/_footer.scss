@@ -43,6 +43,8 @@
       color: $Verdeclaro;
       text-decoration: none;
       font-size: 120%;
+      transition-property: font-size;
+      transition-duration: 1s;
     }
     &:active {
       color: $Verdeoscuro;

@@ -55,6 +55,7 @@
     line-height: 1.5;
     color: $ColorGris;
     flex-grow: 1;
+    padding: 0 15px 0;
   }
 
   &__strengths-title {
@@ -73,7 +74,7 @@
     line-height: 1.5;
     color: $ColorGris;
     flex-grow: 4;
-    padding: 0px 15px 0px;
+    padding: 0 15px 0;
   }
   &__weaknesses-title {
     margin-bottom: 15px;
