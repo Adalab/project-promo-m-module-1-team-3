@@ -10,6 +10,10 @@
   height: 421px;
   margin-left: 0;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+}
 
 .motto-rectangle {
   background-color: #ffffff;
@@ -19,7 +23,7 @@
   display: block;
   top: 365px;
   padding-top: 15px;
-  transform: translate(50%, 25%);
+  transform: translate(0, 25%);
 }
 .motto {
   font-size: 18px;
@@ -55,7 +59,7 @@
     width: 381px;
   }
   .hero {
-    padding-left: 46px;
+    display: block;
   }
 }
 /*Jana mediaquery tablet*/
