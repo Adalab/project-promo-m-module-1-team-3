@@ -42,7 +42,7 @@
     width: 100vw;
     background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
   }
-  .motto-rectangle {
+  .image__motto-rectangle {
     width: 441px;
     height: 80px;
     opacity: 0.8;
@@ -55,6 +55,7 @@
   }
 
   .image__motto {
+    text-align: center;
     width: 381px;
   }
   .hero {
