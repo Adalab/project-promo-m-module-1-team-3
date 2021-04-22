@@ -1,26 +1,28 @@
 /* Hero image and Motto (Jana)*/
+/* Hero image and Motto (Jana)*/
 .image {
   background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   position: relative; /*with respect to the viewport*/
   display: block;
   width: 100vw;
   height: 421px;
-  margin-left: 0;
+  margin: auto; /*changed for 2nd sprint from auto*/
 }
-.image__motto-rectangle {
+.hero {
+  position: absolute; /*with respect to image*/
+}
+.motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
   width: 290px;
   height: 80px;
-  display: block;
   left: 15px;
   top: 365px;
   padding-top: 15px;
 }
-.image__motto {
+.motto {
   font-family: var(--FontOpenSans);
   font-size: 18px;
   font-style: normal; /*opcional*/
@@ -35,33 +37,30 @@
   left: 15px;
   top: 20px;
 }
-
 /*Jana mediaquery tablet*/
 @media (min-width: 768px) {
   .image {
     width: 100vw;
     background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  .image__motto-rectangle {
+  .motto-rectangle {
     width: 441px;
     height: 80px;
     opacity: 0.8;
-    //margin-left: 46px;
+    margin-left: 46px;
     margin-right: 281px;
     /* padding-left: 46px; */
   }
-  .image__motto-rectangle {
-    margin-left: 45px;
-  }
-
-  .image__motto {
-    text-align: center;
+  .motto {
     width: 381px;
   }
   .hero {
     padding-left: 46px;
   }
 }
+
 /*Jana mediaquery tablet PC*/
 @media (min-width: 1200px) {
   .image {
@@ -70,18 +69,15 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  //.motto-rectangle {
-
-  .image__motto-rectangle {
+  .motto-rectangle {
     width: 574px;
     height: 90px;
+    opacity: 0.8;
     margin-left: 138px;
     margin-right: 488px;
-    background-color: rgba(255, 255, 255, 0.8);
     /* padding-left: 46px; */
   }
-  .image__motto {
+  .motto {
     width: 514px;
     font-size: 24px;
   }
