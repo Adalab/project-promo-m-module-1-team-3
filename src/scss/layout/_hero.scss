@@ -1,6 +1,6 @@
 /* Hero image and Motto (Jana)*/
 .image {
-  background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+  background-image: url("../images/cabecera.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,7 +10,7 @@
   height: 421px;
   margin-left: 0;
   &__motto-rectangle {
-    background-color: #ffffff;
+    background-color: white;
     position: absolute; /*with respect to hero*/
     width: 290px;
     height: 80px;
@@ -20,7 +20,6 @@
     padding-top: 15px;
   }
   &__motto {
-    font-family: var(--FontOpenSans);
     font-size: 18px;
     font-style: normal; /*opcional*/
     font-weight: 600; /*Semi-bold text*/
