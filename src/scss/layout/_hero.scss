@@ -10,16 +10,13 @@
   height: 421px;
   margin-left: 0;
 }
-.hero {
-  padding-left: 46px;
-}
 .image__motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
   width: 290px;
   height: 80px;
   display: block;
-  margin-left: 15px;
+  left: 15px;
   top: 365px;
   padding-top: 15px;
 }
