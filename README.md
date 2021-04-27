@@ -1,4 +1,4 @@
-![Logo](./src/images/logo.png)
+![Logo](https://raw.githubusercontent.com/Adalab/project-promo-m-module-1-team-3/master/Logo.png)
 
 ## < Eleven code >
 
