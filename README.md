@@ -1,3 +1,5 @@
+![gif of desktop view ](./src/images/logo.png)
+
 ## < Eleven code >
 
 This is our first project at Adalab Bootcamp.
