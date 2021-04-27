@@ -50,6 +50,7 @@
     margin-top: 58px;
     text-align: left;
     width: 100%;
+
     &--name {
       display: flex;
       flex-direction: column;
@@ -81,6 +82,7 @@
       margin-bottom: 13px;
       border: solid 1px $Grisclaro;
       padding: 0;
+      text-indent: 10px;
     }
     &--box-message {
       height: 105px;
@@ -104,7 +106,6 @@
     ::placeholder {
       color: $Grisclaro;
       font-size: 14px;
-      padding-left: 15px;
       padding-top: 7px;
     }
   }
