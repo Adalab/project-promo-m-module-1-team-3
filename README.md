@@ -1,4 +1,4 @@
-![gif of desktop view ](./src/images/logo.png)
+![Logo](./src/images/logo.png)
 
 ## < Eleven code >
 
