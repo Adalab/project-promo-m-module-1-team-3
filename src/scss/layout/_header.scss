@@ -1,3 +1,13 @@
+.central-column {
+  margin: auto 15px;
+
+  @media all and(min-width: 768px) {
+    margin: auto 45px;
+  }
+  @media all and(min-width: 1280px) {
+    margin: auto 138px;
+  }
+}
 .header {
   &__all {
     width: 100%;
@@ -17,9 +27,9 @@
     padding-top: 25px;
     padding-bottom: 25px;
     opacity: 0.95;
-    background-color: #099d8d;
-    font-family: Rubik;
-    color: #ffffff;
+    background-color: $Verdeoscuro;
+    font-family: $FontRubik;
+    color: white;
     text-transform: uppercase;
     text-align: center;
   }
@@ -35,7 +45,7 @@
     align-content: center;
     list-style: none;
     opacity: 0.9;
-    background-color: #14d9c4;
+    background-color: $Verdeclaro;
   }
 
   &__list {
@@ -50,31 +60,31 @@
 
 .equipo {
   text-transform: uppercase;
-  font-family: var(--FontRubik);
+  font-family: $FontRubik;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
-  color: #ffffff;
+  color: white;
 }
 .quienes_somos {
   text-transform: uppercase;
-  font-family: var(--FontRubik);
+  font-family: $FontRubik;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
-  color: #ffffff;
+  color: white;
   padding-right: 15px;
   padding-left: 15px;
 }
 .contactos {
   text-transform: uppercase;
-  font-family: Rubik;
+  font-family: $FontRubik;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
-  color: #ffffff;
+  color: white;
 }
 .menu-link:link {
   color: white;
@@ -85,7 +95,7 @@
   text-decoration: none;
 }
 .menu-link:hover {
-  color: var(--Gris);
+  color: $ColorGris;
   text-decoration: none;
 }
 .menu-link:active {
@@ -103,7 +113,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    background: 0px;
+    background: 0;
   }
   .team-name {
     display: flex;
@@ -128,7 +138,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    background: 0px;
+    background: 0;
   }
   .team-name {
     display: flex;
