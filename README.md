@@ -65,7 +65,7 @@ This project was created by Eleven Code Team:
 
 > Jana Dimitrova [🔗](https://github.com/JanaDTitarchuk)
 
-> Marcela Chuqui [🔗](https://github.com/marcelachuqi)
+> Marcela Chuqi [🔗](https://github.com/marcelachuqi)
 
 > Nur Ahissami [🔗](https://github.com/NurAhissami)
 
