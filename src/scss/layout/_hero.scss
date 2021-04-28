@@ -5,17 +5,25 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative; /*with respect to the viewport*/
-  width: 100%;
   height: 421px;
   margin-left: 0;
 }
+// .back {
+//   width: 100%;
+//   height: 421px;
+//   background-color: rgba(255, 255, 255, 0.25);
+// }
 .animation {
-  height: 421px;
+  width: 100%;
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-left: 90px;
+  padding-top: 175px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 }
 .etiqueta1 {
   width: 45px;
@@ -23,23 +31,43 @@
   animation-duration: 3s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-
-  @keyframes left {
-    0% {
-      transform: translatex(0px) translatey(0px);
-    }
-    100% {
-      transform: translatex(0px) rotate(120deg);
-    }
+  // position: absolute;
+}
+@keyframes left {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  100% {
+    transform: translatex(0px) rotate(120deg);
   }
 }
+
 .nombre-logo {
   width: 175px;
   animation-name: intro;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  // position: absolute;
 }
-
+.logosimple {
+  width: 175px;
+  visibility: hidden;
+  animation-name: final;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  // position: absolute;
+}
+@keyframes final {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-180px);
+    visibility: visible;
+  }
+}
 @keyframes intro {
   0% {
     opacity: 1;
@@ -55,6 +83,7 @@
   animation-delay: 1s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  // position: absolute;
 }
 @keyframes right {
   0% {
@@ -66,6 +95,7 @@
 }
 .logosimple {
   width: 175px;
+  // position: absolute;
 }
 .motto-rectangle {
   background-color: #ffffff;
