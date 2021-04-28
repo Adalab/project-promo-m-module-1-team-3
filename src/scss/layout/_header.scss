@@ -1,18 +1,13 @@
 .header {
   &__all {
-    width: 100%;
-    display: block;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 999;
   }
   &__base {
+    background-color: #099d8d;
     height: 60px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -48,16 +43,41 @@
   }
 }
 
+.menu-link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .menu__bar {
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team-name {
+    display: flex;
+  }
+
+  .menu__list {
+    height: 30px;
+    transform: translateY(-45px);
+    padding-bottom: 15px;
+  }
+}
+
 .equipo {
   text-transform: uppercase;
+  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
   color: #ffffff;
 }
+
 .quienes_somos {
   text-transform: uppercase;
+  /* height: 30px; */
   font-family: var(--FontRubik);
   font-stretch: normal;
   font-style: normal;
@@ -69,7 +89,8 @@
 }
 .contactos {
   text-transform: uppercase;
-  font-family: Rubik;
+  /* height: 30px; */
+  font-family: $FontRubik;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
@@ -95,51 +116,50 @@
 
 /*Marcela mediaquery tablet*/
 @media (min-width: 768px) {
-  .header__base {
+  .header_base {
     height: 60px;
   }
-  .menu__bar {
-    height: 30px;
+  .menu_bar {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
     background: 0px;
   }
-  .team-name {
+
+  .header__base-name {
     display: flex;
     flex-direction: row;
     padding-bottom: 15px;
   }
 
-  .menu__list {
+  .menu_list {
     height: 30px;
-    // padding-right: 45px;
+    padding-right: 45px;
     transform: translateY(-45px);
   }
 }
 
 /*Marcela mediaquery desktop*/
 @media (min-width: 1200px) {
-  .header__base {
+  .header_base {
     height: 60px;
   }
-  .menu__bar {
+  .menu_bar {
     height: 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
     background: 0px;
   }
-  .team-name {
+  .team_name {
     display: flex;
     flex-direction: row;
     padding-bottom: 15px;
-    // padding-left: 138px;
+    padding-left: 138px;
   }
 
-  .menu__list {
+  .menu_list {
     height: 30px;
-    // padding-right: 142px;
+    padding-right: 142px;
     transform: translateY(-45px);
   }
 }
