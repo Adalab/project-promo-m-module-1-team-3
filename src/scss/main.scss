@@ -1,9 +1,7 @@
 @import "core/variables";
 @import "core/reset";
-// @import "core/base";
 @import "components/code";
 @import "components/links";
-@import "layout/page";
 @import "layout/header";
 @import "layout/descriptions";
 @import "layout/footer";
@@ -39,41 +37,156 @@ body {
   }
 }
 
-/* white box*/
+/*HEADER */
+.header_all {
+  width: 100%;
+  display: block;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 
-// .boxsection {
-//   background-color: #efefef;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-// }
+.header_base {
+  height: 60px;
+  padding: 25px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  font-family: Rubik;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  /* width: 160px;
+    height: 30px;
+    font-size: 16px; */
+}
 
-// .whitebox {
-//   width: 30px;
-//   height: 30px;
-//   // transform: translateX(-15px);
-//   background-color: white;
+.menu_bar {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  /* width: 320px;
+    height: 45px;  */
+  /* margin: 60px 0 0; */
+  /* padding: 8px 17px 7px 16px; */
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.menu_list {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  margin: 0px 20px 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.equipo {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  color: #ffffff;
+}
+.quienes_somos {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: var(--FontRubik);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contactos {
+  text-transform: uppercase;
+  /* height: 30px; */
+  font-family: Rubik;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.menu-link:link {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--Gris);
+  text-decoration: none;
+}
+.menu-link:active {
+  color: white;
+  text-decoration: none;
+}
 
-//   transform: translate(-50%,  -50%);
-//   transform: rotate(45deg);
-// }
+/*Marcela mediaquery tablet*/
+@media (min-width: 768px) {
+  .header_base {
+    height: 60px;
+  }
+  .menu_bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team_name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
 
-// .boxsection {
-//   box-sizing: border-box;
-//   width: 30px;
-//   height: 30px;
-//   transform: translateY(-15px);
-//   margin-left: 44vw;
-// }
+  .menu_list {
+    height: 30px;
+    padding-right: 45px;
+    transform: translateY(-45px);
+  }
+}
 
-// .whitebox {
-//   width: 30px;
-//   height: 30px;
-//   background-color: #ffffff;
-//   transform: rotate(45deg);
-// }
+/*Marcela mediaquery desktop*/
+@media (min-width: 1200px) {
+  .header_base {
+    height: 60px;
+  }
+  .menu_bar {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background: 0px;
+  }
+  .team_name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    padding-left: 138px;
+  }
 
-// /* white box*/
+  .menu_list {
+    height: 30px;
+    padding-right: 142px;
+    transform: translateY(-45px);
+  }
+}
 
 .whitebox {
   position: absolute;
@@ -82,148 +195,140 @@ body {
   height: 30px;
   background-color: #ffffff;
   transform: translate(-50%, -50%) rotate(45deg);
+}
 
-  // .boxsection {
-  //   display: flex;
-  //   padding-right: 15px;
-  // }
+/*seccion Lorena:equipo, fortalezas y debilidades*/
+.section1 {
+  position: relative;
+  background-color: #efefef;
+}
+.section2 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
 
-  // .whitebox {
-  // }
+.team-container {
+  font-family: var(--FontOpenSans);
+  padding: 35px 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  line-height: 1.2;
+}
+.team-title {
+  font-family: var(--FontOpenSans);
+  font-weight: 500;
+  height: 45px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeclaro);
+}
+.team-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
 
-  /*seccion Lorena:equipo, fortalezas y debilidades*/
-  .section1 {
-    position: relative;
-    background-color: #efefef;
-  }
-  .section2 {
-    background-color: #efefef;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-  }
+.strengths-container {
+  font-family: var(--FontOpenSans);
+  padding: 30px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 1;
+}
+.strengths {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-container {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  color: var(--Gris);
+  flex-grow: 4;
+  padding: 0px 15px 0px;
+}
+.weaknesses {
+  font-family: var(--FontOpenSans);
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--Verdeoscuro);
+}
+.weaknesses-description {
+  font-family: var(--FontOpenSans);
+  font-size: 16px;
+  text-align: center;
+  color: var(--Gris);
+}
 
-  .team-container {
-    font-family: var(--FontOpenSans);
-    padding: 35px 15px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    line-height: 1.2;
-  }
-  .team-title {
-    font-family: var(--FontOpenSans);
-    font-weight: 500;
-    height: 45px;
-    text-align: center;
-    font-size: 22px;
-    color: var(--Verdeclaro);
-  }
-  .team-description {
-    font-family: var(--FontOpenSans);
-    font-size: 16px;
-    text-align: center;
-    color: var(--Gris);
-  }
+.section1 .section2 {
+  max-width: 320px;
+}
 
-  .strengths-container {
-    font-family: var(--FontOpenSans);
-    padding: 30px 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    line-height: 1.5;
-    color: var(--Gris);
-    flex-grow: 1;
-  }
-  .strengths {
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    font-size: 22px;
-    color: var(--Verdeoscuro);
-  }
-  .weaknesses-container {
-    margin-top: 30px;
-    margin-bottom: 45px;
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.5;
-    color: var(--Gris);
-    flex-grow: 4;
-    padding: 0px 15px 0px;
-  }
-  .weaknesses {
-    font-family: var(--FontOpenSans);
-    text-align: center;
-    font-weight: 500;
-    font-size: 22px;
-    color: var(--Verdeoscuro);
-  }
-  .weaknesses-description {
-    font-family: var(--FontOpenSans);
-    font-size: 16px;
-    text-align: center;
-    color: var(--Gris);
-  }
-
-  .section1 .section2 {
-    max-width: 320px;
-  }
-
-  /* text-align: center;
+/* text-align: center;
     color: var(--aqua);
   } */
 
-  @media (min-width: 780px) {
-    .team-container {
-      margin: 15px 0 0;
-      line-height: 1.5;
-      padding: 45px 45px 30px;
-    }
-    .section2 {
-      margin: 16px 0 0;
-      padding: 45px 44.8px 60px 45px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-    }
-    .strengths-container {
-      margin: 0 0;
-      line-height: 24px;
-    }
-    .weaknesses-container {
-      margin: 0 0;
-      line-height: 24px;
-    }
+@media (min-width: 780px) {
+  .team-container {
+    margin: 15px 0 0;
+    line-height: 1.5;
+    padding: 45px 45px 30px;
   }
+  .section2 {
+    margin: 16px 0 0;
+    padding: 45px 44.8px 60px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .strengths-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+  .weaknesses-container {
+    margin: 0 0;
+    line-height: 24px;
+  }
+}
 
-  @media (min-width: 1200px) {
-    .team-container {
-      line-height: 1.5;
-      padding: 45px 300px 60px 299px;
-    }
-    .section2 {
-      margin: 16px 0 0;
-      padding: 45px 138px 60px;
-      text-align: center;
-      justify-content: center;
-    }
-    .strengths-container {
-      margin: 15px 38.2px 0 0;
-      line-height: 1.5;
-    }
-    .weaknesses-container {
-      margin: 15px 1px 0 45px;
-      line-height: 1.5;
-    }
+@media (min-width: 1200px) {
+  .team-container {
+    line-height: 1.5;
+    padding: 45px 300px 60px 299px;
+  }
+  .section2 {
+    margin: 16px 0 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  .strengths-container {
+    margin: 15px 38.2px 0 0;
+    line-height: 1.5;
+  }
+  .weaknesses-container {
+    margin: 15px 1px 0 45px;
+    line-height: 1.5;
   }
 }

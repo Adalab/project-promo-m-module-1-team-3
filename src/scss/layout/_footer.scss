@@ -35,7 +35,7 @@
   }
   &__menu-link {
     color: $ColorGris;
-    padding: 15px;
+    padding-left: 15px;
     line-height: 2.4;
     text-decoration: none;
     &:focus,
@@ -43,6 +43,8 @@
       color: $Verdeclaro;
       text-decoration: none;
       font-size: 120%;
+      transition-property: font-size;
+      transition-duration: 1s;
     }
     &:active {
       color: $Verdeoscuro;
