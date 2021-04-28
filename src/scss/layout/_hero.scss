@@ -5,17 +5,74 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative; /*with respect to the viewport*/
-  display: block;
-
+  width: 100%;
   height: 421px;
   margin-left: 0;
 }
+.animation {
+  height: 421px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.etiqueta1 {
+  width: 45px;
+  animation-name: left;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 
+  @keyframes left {
+    0% {
+      transform: translatex(0px) translatey(0px);
+    }
+    100% {
+      transform: translatex(0px) rotate(120deg);
+    }
+  }
+}
+.nombre-logo {
+  width: 175px;
+  animation-name: intro;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.etiqueta2 {
+  width: 45px;
+  animation-name: right;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes right {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  100% {
+    transform: translatex(-190px) translatey(0px) rotate(-60deg);
+  }
+}
+.logosimple {
+  width: 175px;
+}
 .motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
   width: 290px;
   height: 80px;
+  margin-left: 15px;
   display: block;
   top: 365px;
   padding-top: 15px;
