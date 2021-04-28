@@ -6,7 +6,7 @@
   background-position: center;
   position: relative; /*with respect to the viewport*/
   display: block;
-  width: 100vw;
+
   height: 421px;
   margin-left: 0;
 }
@@ -38,19 +38,23 @@
 /*Jana mediaquery tablet*/
 @media (min-width: 768px) {
   .image {
-    width: 100vw;
+    // width: 100vw;
     background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .motto-rectangle {
-    width: 441px;
     height: 80px;
     opacity: 0.8;
     margin-right: 281px;
     transform: translate(45px, 0);
+    width: 441px;
     /* padding-left: 46px; */
   }
+  .image__motto-rectangle {
+    margin-left: 45px;
+  }
+
   .motto {
     width: 381px;
   }
