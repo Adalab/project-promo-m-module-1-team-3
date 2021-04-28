@@ -5,17 +5,21 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative; /*with respect to the viewport*/
-  width: 100%;
   height: 421px;
   margin-left: 0;
+}
+.back {
+  width: 100%;
+  height: 421px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .animation {
   height: 421px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
+  position: absolute;
+  // transform: translatex(50%);
 }
 .etiqueta1 {
   width: 45px;
@@ -35,13 +39,28 @@
 }
 .nombre-logo {
   width: 175px;
-
-  top: 50%;
   animation-name: intro;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
-
+.logosimple {
+  width: 175px;
+  visibility: hidden;
+  animation-name: final;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes final {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-180px);
+    visibility: visible;
+  }
+}
 @keyframes intro {
   0% {
     opacity: 1;
