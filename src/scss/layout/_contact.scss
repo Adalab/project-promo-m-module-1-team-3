@@ -87,6 +87,8 @@
     &--box-message {
       height: 105px;
       margin-top: 7px;
+      text-indent: 10px;
+      padding-top: 10px;
     }
     &--bottom {
       display: block;
@@ -106,7 +108,6 @@
     ::placeholder {
       color: $Grisclaro;
       font-size: 14px;
-      padding-top: 7px;
     }
   }
 
